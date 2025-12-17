@@ -270,11 +270,20 @@ export default function Home() {
                 <div className="space-y-3">
                   <div>
                     <div className="flex justify-between text-sm mb-1">
+                      <span>Premium Wagyu (grain-finished)</span>
+                      <span className="text-red-600">25:1+</span>
+                    </div>
+                    <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
+                      <div className="h-full bg-red-500 rounded-full" style={{ width: '100%' }}></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
                       <span>Feedlot/CAFO Beef</span>
                       <span>15-20:1</span>
                     </div>
                     <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-red-400 rounded-full" style={{ width: '95%' }}></div>
+                      <div className="h-full bg-red-400 rounded-full" style={{ width: '80%' }}></div>
                     </div>
                   </div>
                   <div>
@@ -283,16 +292,16 @@ export default function Home() {
                       <span>8-12:1</span>
                     </div>
                     <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-amber-400 rounded-full" style={{ width: '60%' }}></div>
+                      <div className="h-full bg-amber-400 rounded-full" style={{ width: '48%' }}></div>
                     </div>
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="font-medium">Everglades Ranch (pasture-raised)</span>
+                      <span className="font-medium">Everglades Ranch American Wagyu</span>
                       <span className="font-medium" style={{ color: 'var(--color-forest)' }}>6:1</span>
                     </div>
                     <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
-                      <div className="h-full rounded-full" style={{ width: '30%', backgroundColor: 'var(--color-forest)' }}></div>
+                      <div className="h-full rounded-full" style={{ width: '24%', backgroundColor: 'var(--color-forest)' }}></div>
                     </div>
                   </div>
                 </div>
