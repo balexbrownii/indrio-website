@@ -3,35 +3,38 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
-      {/* Hero Section - Customer as Hero */}
+      {/* Hero - The Movement */}
       <section
-        className="section hero-dark relative min-h-[70vh] flex items-center"
+        className="section hero-dark relative min-h-[80vh] flex items-center"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(/images/grove-hero.jpg)',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(/images/grove-hero.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center animate-slide-up">
-            <p className="text-sm uppercase tracking-widest mb-4">
-              For People Who Care What They Eat
+            <p className="text-sm uppercase tracking-widest mb-4 text-white/80">
+              The Guide to Farm-to-Table Food Quality
             </p>
             <h1 className="mb-6">
-              You can taste when food is grown right.<br />
-              <span style={{ color: 'var(--color-accent)' }}>You just forgot what it&apos;s supposed to taste like.</span>
+              The System Between Farm and Table<br />
+              <span style={{ color: 'var(--color-accent)' }}>Is Broken.</span>
             </h1>
-            <p className="lead mb-8">
-              If you&apos;ve ever wondered why a grocery store orange tastes like water, or why
-              &ldquo;grass-fed&rdquo; beef doesn&apos;t taste any different—you&apos;re not imagining it.
-              The system is designed that way.
+            <p className="lead mb-6">
+              Farmers want to grow food that nourishes. You want to eat food that tastes like it used to.
+              The industrial system in between optimizes for neither.
+            </p>
+            <p className="text-xl text-white/90 mb-8">
+              <strong>We&apos;re here to fix that.</strong> For you. For the farmers.
+              For everyone who&apos;s been sold out by a system that prioritizes scale over quality.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/brands" className="btn btn-primary">
-                Taste the Difference
+              <Link href="/learn" className="btn btn-primary">
+                Understand the Problem
               </Link>
               <Link
-                href="/mission"
+                href="/fielder"
                 className="btn"
                 style={{
                   backgroundColor: 'transparent',
@@ -39,220 +42,319 @@ export default function Home() {
                   border: '2px solid white'
                 }}
               >
-                See Why It Matters
+                See the Data
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* The Problem You Face */}
+      {/* The Problem - Name the Enemy */}
       <section className="section">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-center mb-8">You&apos;re Not Crazy. The Food Really Is Different.</h2>
-            <div className="space-y-6">
-              <p className="text-lg">
-                You&apos;ve noticed it. The tomatoes that look perfect but taste like nothing. The oranges
-                that are more sour than sweet. The beef labeled &ldquo;grass-fed&rdquo; that costs twice as much
-                but doesn&apos;t taste any better.
-              </p>
-              <p className="text-lg">
-                <strong>It&apos;s not your imagination.</strong> The food system rewards farmers for yield
-                and appearance—not flavor or nutrition. USDA grades citrus by peel color, not sugar content.
-                Grocers pay by the pound, not the brix. So that&apos;s what gets grown.
-              </p>
-              <div className="card-parchment card p-6" style={{ borderLeft: '4px solid var(--color-accent)' }}>
-                <p className="text-lg mb-0">
-                  <strong>The good news?</strong> When farmers are paid for what actually matters—flavor,
-                  nutrition, soil health—they grow food that tastes the way you remember it should.
+            <h2 className="text-center mb-4">The System in Between Has Ruined Our Food</h2>
+            <p className="text-center text-lg mb-12 text-stone-600">
+              Farmers lose. Consumers lose. Only the middlemen win.
+            </p>
+
+            <div className="space-y-8">
+              <div className="card p-6" style={{ borderLeft: '4px solid #e74c3c' }}>
+                <h3 className="text-xl mb-3 flex items-center gap-3">
+                  <span className="text-2xl">🏭</span>
+                  Consolidation Crushed Quality
+                </h3>
+                <p className="mb-0 text-stone-600">
+                  Four companies control 85% of beef processing in America. Grocery chains dictate
+                  prices to farmers. Commodity markets reward uniformity, not nutrition. Farmers
+                  who want to grow better food can&apos;t find buyers willing to pay for it.
                 </p>
+              </div>
+
+              <div className="card p-6" style={{ borderLeft: '4px solid #e74c3c' }}>
+                <h3 className="text-xl mb-3 flex items-center gap-3">
+                  <span className="text-2xl">🏷️</span>
+                  Labels Became Marketing Fiction
+                </h3>
+                <p className="mb-0 text-stone-600">
+                  &ldquo;Product of USA&rdquo; beef never has to draw a breath on American soil—
+                  local ranchers compete against imports labeled as domestic. &ldquo;Grass-fed&rdquo;
+                  has no federal definition. &ldquo;Pasture-raised&rdquo; means access, not time.
+                  Honest farmers can&apos;t compete with legal fiction.
+                </p>
+              </div>
+
+              <div className="card p-6" style={{ borderLeft: '4px solid #e74c3c' }}>
+                <h3 className="text-xl mb-3 flex items-center gap-3">
+                  <span className="text-2xl">📏</span>
+                  The Wrong Things Get Measured
+                </h3>
+                <p className="mb-0 text-stone-600">
+                  Grocery chains pay by weight, not nutrition. USDA grades citrus by color, not
+                  sugar content. The system rewards size, uniformity, and shelf life—metrics that
+                  benefit distributors. Flavor and nutrition? Nobody pays farmers for those.
+                </p>
+              </div>
+
+              <div className="card p-6" style={{ borderLeft: '4px solid #e74c3c' }}>
+                <h3 className="text-xl mb-3 flex items-center gap-3">
+                  <span className="text-2xl">📜</span>
+                  Regulations Written by Lobbyists
+                </h3>
+                <p className="mb-0 text-stone-600">
+                  Food safety rules that crush small farms while giving mega-processors a pass.
+                  Labeling laws with loopholes big enough to drive a truck through. Import rules
+                  that let foreign beef wear American labels. The regulations protect the biggest
+                  players—not farmers, not consumers.
+                </p>
+              </div>
+            </div>
+
+            <div className="card-parchment card p-8 mt-12 text-center">
+              <p className="text-xl mb-4">
+                <strong>Farmers and consumers are on the same side.</strong>
+              </p>
+              <p className="text-lg mb-0 text-stone-600">
+                The farmer who wants to grow food that nourishes and the family who wants to eat it
+                are both being failed by a system that doesn&apos;t value quality. We&apos;re building
+                the bridge between them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Solution - What We Do */}
+      <section className="section section-cream">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-center mb-4">We Measure What Labels Only Promise</h2>
+            <p className="text-center text-lg mb-12 text-stone-600">
+              Indrio Fields is the trusted guide to farm-to-table food quality.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"
+                  style={{ backgroundColor: 'var(--color-forest)', color: 'white' }}
+                >
+                  📚
+                </div>
+                <h3 className="text-xl mb-3">Learn</h3>
+                <p className="text-stone-600 mb-4">
+                  Understand what labels actually mean. Learn what brix is, why omega ratios matter,
+                  and how to decode marketing claims.
+                </p>
+                <Link href="/learn" className="text-sm font-medium" style={{ color: 'var(--color-forest)' }}>
+                  Start Learning →
+                </Link>
+              </div>
+
+              <div className="text-center">
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"
+                  style={{ backgroundColor: 'var(--color-forest)', color: 'white' }}
+                >
+                  🔬
+                </div>
+                <h3 className="text-xl mb-3">Verify</h3>
+                <p className="text-stone-600 mb-4">
+                  Access quality scores, cultivar data, and comparison reports. See the numbers
+                  behind the claims with our Fielder verification engine.
+                </p>
+                <Link href="/fielder" className="text-sm font-medium" style={{ color: 'var(--color-forest)' }}>
+                  See the Data →
+                </Link>
+              </div>
+
+              <div className="text-center">
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"
+                  style={{ backgroundColor: 'var(--color-forest)', color: 'white' }}
+                >
+                  ✓
+                </div>
+                <h3 className="text-xl mb-3">Taste</h3>
+                <p className="text-stone-600 mb-4">
+                  Experience the difference yourself. Our family of brands applies these principles—
+                  they&apos;re proof the framework works.
+                </p>
+                <Link href="/brands" className="text-sm font-medium" style={{ color: 'var(--color-forest)' }}>
+                  See the Proof →
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* The Simple Plan */}
-      <section className="section section-cream">
+      {/* The Framework - S.H.A.R.E. */}
+      <section className="section">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-center mb-4">How It Works</h2>
-            <p className="text-center text-lg mb-12">
-              Getting food that&apos;s actually grown for flavor and nutrition is simpler than you think.
+            <h2 className="text-center mb-4">Our Framework: S.H.A.R.E.</h2>
+            <p className="text-center text-lg mb-12 text-stone-600">
+              Our proprietary system for measuring what actually matters in food quality.
             </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold"
-                  style={{ backgroundColor: 'var(--color-forest)', color: 'white' }}
-                >
-                  1
+
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
+              {[
+                { letter: 'S', word: 'Soil', desc: 'Healthy soil builds nutrition' },
+                { letter: 'H', word: 'Heritage', desc: 'Varieties bred for flavor' },
+                { letter: 'A', word: 'Agricultural', desc: 'Practices that matter' },
+                { letter: 'R', word: 'Ripen', desc: 'Harvested at peak' },
+                { letter: 'E', word: 'Enrich', desc: 'Measuring outcomes' },
+              ].map((item) => (
+                <div key={item.letter} className="card p-4 text-center">
+                  <div className="text-3xl font-bold mb-1" style={{ color: 'var(--color-accent)' }}>
+                    {item.letter}
+                  </div>
+                  <div className="font-medium mb-1">{item.word}</div>
+                  <div className="text-xs text-stone-500">{item.desc}</div>
                 </div>
-                <h3 className="text-xl mb-3">Choose What You Want</h3>
-                <p>
-                  Florida citrus. Texas grapefruit. American Wagyu beef. Pick what your family loves.
-                </p>
-              </div>
-              <div className="text-center">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold"
-                  style={{ backgroundColor: 'var(--color-forest)', color: 'white' }}
-                >
-                  2
-                </div>
-                <h3 className="text-xl mb-3">We Ship It Fresh</h3>
-                <p>
-                  Picked at peak ripeness, not picked green to survive shipping. Direct from family farms to your door.
-                </p>
-              </div>
-              <div className="text-center">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold"
-                  style={{ backgroundColor: 'var(--color-forest)', color: 'white' }}
-                >
-                  3
-                </div>
-                <h3 className="text-xl mb-3">Taste the Difference</h3>
-                <p>
-                  11°+ brix citrus instead of grocery&apos;s 8-10°. Beef with real omega-3s. Food that reminds you what food should be.
-                </p>
-              </div>
+              ))}
             </div>
-            <div className="text-center mt-10">
-              <Link href="/brands" className="btn btn-primary">
-                Explore Your Options
+
+            <div className="text-center">
+              <Link href="/learn/share-framework" className="btn btn-secondary">
+                Learn the Framework
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What You Get - Transformation */}
-      <section className="section">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-center mb-4">What Changes When You Switch</h2>
-            <p className="text-center text-lg mb-12">
-              The numbers tell the story. Here&apos;s the difference you&apos;ll actually taste.
-            </p>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="card p-6">
-                <h3 className="text-xl mb-4" style={{ color: 'var(--color-forest)' }}>Citrus</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span>Sugar content (Brix)</span>
-                    <div className="text-right">
-                      <span className="text-stone-400 line-through mr-3">8-10°</span>
-                      <span className="font-bold" style={{ color: 'var(--color-accent)' }}>11°+ min</span>
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Time from tree to you</span>
-                    <div className="text-right">
-                      <span className="text-stone-400 line-through mr-3">2-6 weeks</span>
-                      <span className="font-bold" style={{ color: 'var(--color-accent)' }}>Days</span>
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Picked when</span>
-                    <div className="text-right">
-                      <span className="text-stone-400 line-through mr-3">Meets minimum</span>
-                      <span className="font-bold" style={{ color: 'var(--color-accent)' }}>Peak ripe</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card p-6">
-                <h3 className="text-xl mb-4" style={{ color: 'var(--color-forest)' }}>Beef</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span>Omega-6 to Omega-3</span>
-                    <div className="text-right">
-                      <span className="text-stone-400 line-through mr-3">15-20:1</span>
-                      <span className="font-bold" style={{ color: 'var(--color-accent)' }}>6:1</span>
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>EPA Omega-3</span>
-                    <div className="text-right">
-                      <span className="font-bold" style={{ color: 'var(--color-accent)' }}>+1313%</span>
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Time to finish</span>
-                    <div className="text-right">
-                      <span className="text-stone-400 line-through mr-3">12 mo</span>
-                      <span className="font-bold" style={{ color: 'var(--color-accent)' }}>24 mo</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof / Trust */}
+      {/* The Numbers - Show Don't Tell */}
       <section className="section section-cream">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="mb-8">You&apos;re Not Alone</h2>
-            <p className="text-xl mb-8">
-              Thousands of families have made the switch. They came for the citrus gift boxes.
-              They stayed because their kids actually eat the oranges.
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-center mb-4">The Difference You Can Measure</h2>
+            <p className="text-center text-lg mb-12 text-stone-600">
+              Marketing says &ldquo;premium.&rdquo; We show the numbers.
             </p>
-            <div className="grid grid-cols-3 gap-8 mb-8">
-              <div>
-                <div className="text-4xl font-bold mb-2" style={{ color: 'var(--color-forest)' }}>150+</div>
-                <div className="text-sm">Years of family farming</div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="card p-6">
+                <h3 className="text-xl mb-4" style={{ color: 'var(--color-forest)' }}>Citrus Quality (Brix)</h3>
+                <p className="text-sm text-stone-500 mb-4">
+                  Brix measures sugar content. Higher = sweeter, more flavorful.
+                </p>
+                <div className="space-y-3">
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span>Grocery Store (Commodity)</span>
+                      <span>8-10°</span>
+                    </div>
+                    <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
+                      <div className="h-full bg-stone-400 rounded-full" style={{ width: '55%' }}></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="font-medium">Our Minimum Standard</span>
+                      <span className="font-medium" style={{ color: 'var(--color-forest)' }}>11°+</span>
+                    </div>
+                    <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
+                      <div className="h-full rounded-full" style={{ width: '70%', backgroundColor: 'var(--color-forest)' }}></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span>Our Premium/Artisan</span>
+                      <span style={{ color: 'var(--color-accent)' }}>12-18°</span>
+                    </div>
+                    <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
+                      <div className="h-full rounded-full" style={{ width: '95%', backgroundColor: 'var(--color-accent)' }}></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <div className="text-4xl font-bold mb-2" style={{ color: 'var(--color-forest)' }}>4</div>
-                <div className="text-sm">Brands, one standard</div>
+
+              <div className="card p-6">
+                <h3 className="text-xl mb-4" style={{ color: 'var(--color-forest)' }}>Beef Omega Ratio</h3>
+                <p className="text-sm text-stone-500 mb-4">
+                  Omega-6 to Omega-3 ratio. Lower = healthier, less inflammatory.
+                </p>
+                <div className="space-y-3">
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span>Feedlot/CAFO Beef</span>
+                      <span>15-20:1</span>
+                    </div>
+                    <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
+                      <div className="h-full bg-red-400 rounded-full" style={{ width: '95%' }}></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span>&ldquo;Grass-fed&rdquo; (often grain-finished)</span>
+                      <span>8-12:1</span>
+                    </div>
+                    <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
+                      <div className="h-full bg-amber-400 rounded-full" style={{ width: '60%' }}></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="font-medium">Everglades Ranch (100% grass)</span>
+                      <span className="font-medium" style={{ color: 'var(--color-forest)' }}>6:1</span>
+                    </div>
+                    <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
+                      <div className="h-full rounded-full" style={{ width: '30%', backgroundColor: 'var(--color-forest)' }}></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <div className="text-4xl font-bold mb-2" style={{ color: 'var(--color-forest)' }}>100%</div>
-                <div className="text-sm">American grown</div>
-              </div>
+            </div>
+
+            <div className="text-center mt-8">
+              <Link href="/fielder/methodology" className="btn btn-secondary">
+                See Our Methodology
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Your Options */}
+      {/* The Proof - Brands as Evidence */}
       <section className="section">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="mb-4">Find What Your Family Will Love</h2>
-            <p className="lead">
-              Different products for different tables. Same commitment to growing it right.
+            <h2 className="mb-4">The Proof: Brands That Meet the Standard</h2>
+            <p className="lead text-stone-600">
+              These aren&apos;t just products we sell. They&apos;re evidence the S.H.A.R.E. framework works.
             </p>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 name: 'Hale Groves',
-                description: 'Florida citrus at 11-14° brix. The gift that makes people ask where you got it.',
-                metric: 'Since 1947',
+                category: 'Florida Citrus',
+                metric: '11°+ Brix minimum',
+                description: 'Indian River citrus since 1947. Tree-ripened, never picked green.',
                 href: 'https://halegroves.com',
               },
               {
                 name: 'Pittman & Davis',
-                description: 'Texas Ruby Reds and specialty foods. Heritage varieties you won&apos;t find in stores.',
-                metric: 'Since the 1920s',
+                category: 'Texas Citrus',
+                metric: 'Heritage varieties',
+                description: 'Texas Ruby Reds since the 1920s. Hand-selected, not machine-sorted.',
                 href: 'https://pittmandavis.com',
               },
               {
-                name: 'Sun Harvest Citrus',
-                description: 'Fresh-squeezed juice made while you watch. Visit us in Fort Myers.',
-                metric: 'Farm-fresh daily',
+                name: 'Sun Harvest',
+                category: 'Fresh Juice',
+                metric: 'Same-day squeezed',
+                description: 'Never pasteurized, never from concentrate. Real juice, not reconstituted.',
                 href: 'https://sunharvestcitrus.com',
               },
               {
                 name: 'Everglades Ranch',
-                description: 'American Wagyu with omega-3s you can actually measure. 24 months on pasture.',
-                metric: 'Grass-finished',
+                category: 'Grass-Fed Beef',
+                metric: '6:1 omega ratio',
+                description: '100% grass-finished. 24 months on pasture. No feedlot, no loopholes.',
                 href: 'https://evergladesranch.com',
               },
             ].map((brand) => (
@@ -263,60 +365,59 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="brand-card block"
               >
+                <div className="text-xs uppercase tracking-wider text-stone-500 mb-1">{brand.category}</div>
                 <h3 className="text-xl mb-2">{brand.name}</h3>
-                <p className="text-sm mb-4">{brand.description}</p>
+                <p className="text-sm text-stone-600 mb-3">{brand.description}</p>
                 <span className="quality-badge">{brand.metric}</span>
               </a>
             ))}
           </div>
+
           <div className="text-center mt-8">
             <Link href="/brands" className="btn btn-secondary">
-              See All Options
+              Learn About Our Brands
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Newsletter - Invitation to Journey */}
-      <section className="section section-cream">
+      {/* Join the Movement */}
+      <section className="section section-forest">
         <div className="container">
-          <div className="max-w-2xl mx-auto">
-            <div className="card-parchment card p-8 text-center">
-              <h3 className="text-2xl mb-2">Want to Know More?</h3>
-              <p className="text-lg mb-6">
-                The Field Guide: What&apos;s really going on with your food, and what you can do about it.
-                Short reads. No spam. Unsubscribe anytime.
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="mb-6">Join the Movement</h2>
+            <p className="text-lg text-white/90 mb-4">
+              Every time you choose food grown for nutrition over food grown for shipping,
+              you&apos;re voting for a different kind of farming.
+            </p>
+            <p className="text-lg text-white/90 mb-8">
+              The industrial food system won&apos;t change on its own. But we don&apos;t have to wait for it.
+            </p>
+
+            <div className="card-parchment card p-8 text-left max-w-md mx-auto mb-8" style={{ color: 'var(--color-text)' }}>
+              <h3 className="text-xl mb-2">The Field Guide</h3>
+              <p className="text-stone-600 mb-4">
+                Weekly insights on food quality, label fraud, and what you can do about it.
+                No spam. Unsubscribe anytime.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <div className="flex gap-2">
                 <input
                   type="email"
                   placeholder="Your email"
                   className="input flex-1"
                 />
                 <button className="btn btn-primary">
-                  Send It To Me
+                  Join
                 </button>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Final CTA - The Stakes */}
-      <section className="section section-forest">
-        <div className="container">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="mb-6">Your Family Deserves Food That&apos;s Actually Grown for Them</h2>
-            <p className="text-lg text-white/90 mb-8">
-              The industrial food system won&apos;t change on its own. But you don&apos;t have to wait for it.
-              Every time you choose food grown for flavor and nutrition, you&apos;re voting for a different kind of farming.
-            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/brands" className="btn btn-primary">
-                Start With Citrus
+              <Link href="/learn" className="btn btn-primary">
+                Start Learning
               </Link>
-              <Link href="/brands" className="btn btn-outline border-white text-white hover:bg-white/10">
-                Or Try the Beef
+              <Link href="/fielder" className="btn btn-outline border-white text-white hover:bg-white/10">
+                Explore Fielder
               </Link>
             </div>
           </div>

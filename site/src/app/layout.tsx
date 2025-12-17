@@ -18,12 +18,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Indrio | Real Food. Real Farmers. Real Difference.",
-  description: "Connecting people to superior flavor and nutrition while preserving farmland in the USA. Direct from American farmers, ranchers, and growers.",
-  keywords: ["American farmers", "direct to consumer", "premium citrus", "grass-fed beef", "farm to table", "quality food"],
+  title: "Indrio Fields | The Guide to Farm-to-Table Food Quality",
+  description: "The system between farm and table is broken. We measure what labels only promise. Learn about food quality, verify claims with data, and discover farms that meet the standard.",
+  keywords: ["food quality", "brix measurement", "grass-fed beef", "omega ratios", "farm to table", "food labels", "nutrition", "quality verification"],
   openGraph: {
-    title: "Indrio | Real Food. Real Farmers. Real Difference.",
-    description: "Connecting people to superior flavor and nutrition while preserving farmland in the USA.",
+    title: "Indrio Fields | The Guide to Farm-to-Table Food Quality",
+    description: "The system between farm and table is broken. We measure what labels only promise.",
     type: "website",
   },
 };

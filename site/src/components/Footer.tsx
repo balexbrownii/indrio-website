@@ -34,12 +34,12 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h4>Company</h4>
+            <h4>Explore</h4>
             <ul className="space-y-2">
-              <li><Link href="/mission">Mission</Link></li>
-              <li><Link href="/about">About</Link></li>
+              <li><Link href="/learn">Learn</Link></li>
+              <li><Link href="/fielder">Fielder</Link></li>
               <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/newsletter">Newsletter</Link></li>
+              <li><Link href="/about">About Us</Link></li>
             </ul>
           </div>
 

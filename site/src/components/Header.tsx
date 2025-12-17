@@ -24,9 +24,10 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: '/mission', label: 'Our Mission' },
-    { href: '/brands', label: 'Our Brands' },
-    { href: '/blog', label: 'From the Field' },
+    { href: '/learn', label: 'Learn' },
+    { href: '/fielder', label: 'Fielder' },
+    { href: '/brands', label: 'Brands' },
+    { href: '/blog', label: 'Blog' },
   ];
 
   return (
