@@ -18,16 +18,16 @@ export default function Home() {
               The Guide to Farm-to-Table Food Quality
             </p>
             <h1 className="mb-6">
-              The System Between Farm and Table<br />
-              <span style={{ color: 'var(--color-accent)' }}>Is Broken.</span>
+              Your Food Has Lost<br />
+              <span style={{ color: 'var(--color-accent)' }}>Half Its Nutrition.</span>
             </h1>
             <p className="lead mb-6">
-              Farmers want to grow food that nourishes. You want to eat food that tastes like it used to.
-              The industrial system in between optimizes for neither.
+              Produce nutrients have declined ~50% in 50 years. Not because of pesticides.
+              Because USDA grades on appearance—so farmers plant for looks, not nutrition.
             </p>
             <p className="text-xl text-white/90 mb-8">
-              <strong>We&apos;re here to fix that.</strong> For you. For the farmers.
-              For everyone who&apos;s been sold out by a system that prioritizes scale over quality.
+              <strong>We&apos;re here to fix that.</strong> Connecting people to superior flavor and nutrition
+              to benefit their health—all while preserving farmland in the USA.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/learn" className="btn btn-primary">
@@ -90,9 +90,9 @@ export default function Home() {
                   The Wrong Things Get Measured
                 </h3>
                 <p className="mb-0 text-stone-600">
-                  Grocery chains pay for appearance and yield, not nutrition. USDA grades citrus by color, not
-                  brix. The system rewards size, uniformity, and shelf life—metrics that
-                  benefit distributors. Flavor and nutrition? Nobody pays farmers for those.
+                  USDA grades citrus on color and size—not nutrition or flavor. Farmers get paid for
+                  appearance, so they plant cultivars bred for looks and shipping. The result? Dilution effect:
+                  bigger, prettier produce with half the nutrients. Nobody pays farmers for brix or mineral content.
                 </p>
               </div>
 
@@ -185,17 +185,20 @@ export default function Home() {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-center mb-4">Our Framework: S.H.A.R.E.</h2>
-            <p className="text-center text-lg mb-12 text-stone-600">
+            <p className="text-center text-lg mb-6 text-stone-600">
+              Maximize the good. Minimize the bad. Prove it with data.
+            </p>
+            <p className="text-center text-stone-600 mb-12">
               Our proprietary system for measuring what actually matters in food quality.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
               {[
-                { letter: 'S', word: 'Soil Health', desc: 'Healthy soil builds nutrition' },
-                { letter: 'H', word: 'Heritage Cultivars', desc: 'Varieties bred for flavor' },
-                { letter: 'A', word: 'Agricultural Practices', desc: 'Practices that matter' },
-                { letter: 'R', word: 'Ripen', desc: 'Harvested at peak' },
-                { letter: 'E', word: 'Enrich', desc: 'Measuring outcomes' },
+                { letter: 'S', word: 'Soil Health', desc: 'Mineralized soil builds nutrients' },
+                { letter: 'H', word: 'Heritage Cultivars', desc: 'Genetics bred for flavor, not yield' },
+                { letter: 'A', word: 'Agricultural Practices', desc: 'Farming approaches that support quality' },
+                { letter: 'R', word: 'Ripening', desc: 'Harvest timing at peak maturity' },
+                { letter: 'E', word: 'Enriching', desc: 'Lab-verified nutrient density' },
               ].map((item) => (
                 <div key={item.letter} className="card p-4 text-center">
                   <div className="text-3xl font-bold mb-1" style={{ color: 'var(--color-accent)' }}>
@@ -229,49 +232,52 @@ export default function Home() {
               <div className="card p-6">
                 <h3 className="text-xl mb-4" style={{ color: 'var(--color-forest)' }}>Citrus Quality (Brix)</h3>
                 <p className="text-sm text-stone-500 mb-4">
-                  Brix measures dissolved solids—carbohydrates, minerals, vitamins. Higher = more nutritious.
+                  Brix = dissolved solids (carbs, minerals, vitamins). A proxy for nutrient density. Higher = better nutrition and flavor.
                 </p>
                 <div className="space-y-3">
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span>Grocery Store (Commodity)</span>
-                      <span>8-10°</span>
+                      <span>Grocery Store Average</span>
+                      <span>6-8°</span>
                     </div>
                     <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-stone-400 rounded-full" style={{ width: '55%' }}></div>
+                      <div className="h-full bg-stone-400 rounded-full" style={{ width: '40%' }}></div>
                     </div>
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="font-medium">Our Minimum Standard</span>
-                      <span className="font-medium" style={{ color: 'var(--color-forest)' }}>11°+</span>
+                      <span className="font-medium">Our Quality Floor</span>
+                      <span className="font-medium" style={{ color: 'var(--color-forest)' }}>11°+ minimum</span>
                     </div>
                     <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
-                      <div className="h-full rounded-full" style={{ width: '70%', backgroundColor: 'var(--color-forest)' }}></div>
+                      <div className="h-full rounded-full" style={{ width: '65%', backgroundColor: 'var(--color-forest)' }}></div>
                     </div>
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span>Our Premium/Artisan</span>
-                      <span style={{ color: 'var(--color-accent)' }}>12-18°</span>
+                      <span>Heritage/Artisan</span>
+                      <span style={{ color: 'var(--color-accent)' }}>14-18°</span>
                     </div>
                     <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
                       <div className="h-full rounded-full" style={{ width: '95%', backgroundColor: 'var(--color-accent)' }}></div>
                     </div>
                   </div>
                 </div>
+                <p className="text-xs text-stone-500 mt-3 italic">
+                  Shopping at grocery stores = gambling. With us, you win every time—consistent quality above 11° brix.
+                </p>
               </div>
 
               <div className="card p-6">
                 <h3 className="text-xl mb-4" style={{ color: 'var(--color-forest)' }}>Beef Omega Ratio</h3>
                 <p className="text-sm text-stone-500 mb-4">
-                  Omega-6 to Omega-3 ratio. Lower = healthier, less inflammatory.
+                  Omega-6:Omega-3 ratio. Lower = less inflammatory, healthier fat profile. This is what actually accumulates in tissue—not pesticide traces.
                 </p>
                 <div className="space-y-3">
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span>Premium Wagyu (grain-finished)</span>
-                      <span className="text-red-600">25:1+</span>
+                      <span>Premium Wagyu (12+ months grain)</span>
+                      <span className="text-red-600">20-26:1</span>
                     </div>
                     <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
                       <div className="h-full bg-red-500 rounded-full" style={{ width: '100%' }}></div>
@@ -279,32 +285,35 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span>Feedlot/CAFO Beef</span>
+                      <span>Feedlot/CAFO Commodity</span>
                       <span>15-20:1</span>
                     </div>
                     <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-red-400 rounded-full" style={{ width: '80%' }}></div>
+                      <div className="h-full bg-red-400 rounded-full" style={{ width: '75%' }}></div>
                     </div>
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-1">
                       <span>&ldquo;Grass-fed&rdquo; (often grain-finished)</span>
-                      <span>8-12:1</span>
+                      <span>8-15:1</span>
                     </div>
                     <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-amber-400 rounded-full" style={{ width: '48%' }}></div>
+                      <div className="h-full bg-amber-400 rounded-full" style={{ width: '50%' }}></div>
                     </div>
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="font-medium">Everglades Ranch American Wagyu</span>
-                      <span className="font-medium" style={{ color: 'var(--color-forest)' }}>6:1</span>
+                      <span className="font-medium">Everglades Ranch (pasture-raised, no CAFO)</span>
+                      <span className="font-medium" style={{ color: 'var(--color-forest)' }}>~6:1</span>
                     </div>
                     <div className="h-3 bg-stone-200 rounded-full overflow-hidden">
-                      <div className="h-full rounded-full" style={{ width: '24%', backgroundColor: 'var(--color-forest)' }}></div>
+                      <div className="h-full rounded-full" style={{ width: '25%', backgroundColor: 'var(--color-forest)' }}></div>
                     </div>
                   </div>
                 </div>
+                <p className="text-xs text-stone-500 mt-3 italic">
+                  Higher price doesn&apos;t mean healthier. Premium Wagyu has the worst omega ratio because of extended grain feeding.
+                </p>
               </div>
             </div>
 

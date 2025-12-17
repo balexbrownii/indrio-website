@@ -31,8 +31,9 @@ export default function AboutPage() {
             <h2 className="mb-8">The Short Version</h2>
             <div className="space-y-6 text-lg">
               <p>
-                <strong>We&apos;re farmers.</strong> The Brown and Scott families have farmed Florida&apos;s
-                Indian River region since the 1870s. Citrus groves. Cattle ranches. We know this land.
+                <strong>We&apos;re family farmers.</strong> The Brown and Scott families have partnered
+                in citrus operations across Florida&apos;s Indian River region for multiple generations.
+                4,000+ acres. Citrus groves. Cattle ranches. We know this land.
               </p>
               <p>
                 <strong>We got frustrated.</strong> Twenty-five years ago, we watched our best fruit rot
@@ -66,9 +67,9 @@ export default function AboutPage() {
               <div className="card">
                 <h3 className="text-xl mb-3">We Have the Solution</h3>
                 <p className="mb-0">
-                  Over 150 years of farming experience. Four generations of citrus growers. 85+ years
-                  of cattle ranching. And 25 years of direct-to-consumer shipping. We&apos;ve already
-                  built the infrastructure to get real food to your door.
+                  Multi-generational farming families. 25+ years of direct-to-consumer shipping experience.
+                  4,000+ acres across Florida&apos;s best growing regions. We&apos;ve already built the
+                  infrastructure to get real food to your door.
                 </p>
               </div>
               <div className="card">
@@ -101,13 +102,14 @@ export default function AboutPage() {
                 <strong>Ind</strong> + <strong>Rio</strong> = <strong>Indrio</strong>
               </p>
               <p className="text-lg mb-4">
-                &ldquo;Indian&rdquo; in English, &ldquo;River&rdquo; in Spanish. It&apos;s a conjunction
-                that reflects where our family has farmed for over 100 years—Florida&apos;s Indian River region.
+                &ldquo;Indian&rdquo; in English, &ldquo;River&rdquo; in Spanish. The name reflects where
+                we farm—Florida&apos;s Indian River region.
               </p>
               <p className="text-lg mb-0">
-                Indrio was established in 1924, centered around D.J. Wilcox&apos;s homestead during Florida&apos;s
-                land boom. It sits on the Atlantic Coastal Ridge, in the sweet spot between ocean and river
-                that produces the best citrus in America. The name represents deep roots in a specific place.
+                The Indrio community was established in 1924, centered around D.J. Wilcox&apos;s homestead
+                during Florida&apos;s land boom. It sits on the Atlantic Coastal Ridge, in the sweet spot
+                between ocean and river that produces some of the best citrus in America. The name represents
+                deep roots in a specific place.
               </p>
             </div>
           </div>
@@ -135,14 +137,14 @@ export default function AboutPage() {
                   </p>
                   <div className="space-y-4">
                     <p>
-                      Third-generation farmer. Twenty-five years building direct-to-consumer food businesses.
-                      Started by shipping the citrus my father grew, because watching it rot while inferior
-                      fruit sold made no sense.
+                      Multi-generational farmer. Twenty-five years building direct-to-consumer food businesses.
+                      Started in the late 1990s with specialty citrus marketing, because watching great fruit
+                      rot while inferior fruit sold made no sense.
                     </p>
                     <p>
                       I spend my time on quality systems and farmer partnerships—figuring out how to pay
-                      farmers for what actually matters. If you have questions about how we grow or why
-                      the numbers matter, I&apos;m happy to explain.
+                      farmers for what actually matters. The world&apos;s best flavor. That is our goal, period.
+                      If you have questions about how we grow or why the numbers matter, I&apos;m happy to explain.
                     </p>
                   </div>
                 </div>

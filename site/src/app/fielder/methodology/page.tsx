@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Methodology | Fielder | Indrio Fields',
-  description: 'How we measure food quality. Our testing methods, data sources, and verification processes.',
+  description: 'The SHARE Framework: how we predict and verify internal food quality across time and geography.',
 };
 
 export default function MethodologyPage() {
@@ -13,60 +13,70 @@ export default function MethodologyPage() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-sm uppercase tracking-widest mb-4" style={{ color: 'var(--color-accent)' }}>
-              Fielder
+              The SHARE Framework
             </p>
             <h1 className="mb-6">
               Our Methodology
             </h1>
             <p className="lead">
-              How we measure, what we test, and why you can trust the data.
-              Transparency isn&apos;t optional—it&apos;s the whole point.
+              How we predict and verify internal food quality (flavor, nutrition) across
+              time and geography. Built on soil science, validated by measurement.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Principles */}
+      {/* SHARE Framework Overview */}
       <section className="section">
         <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="mb-8">Our Principles</h2>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="mb-8">The SHARE Framework</h2>
+            <p className="text-lg text-stone-600 mb-8">
+              Built on soil science theory from Alternative Agriculture (Albrecht, Kempf, Kittredge, Chaboussou).
+              Fielder adds the missing pieces: Heritage genetics and Ripening timing.
+            </p>
 
-            <div className="space-y-8">
-              <div className="card p-6" style={{ borderLeft: '4px solid var(--color-forest)' }}>
-                <h3 className="text-xl mb-3">Measure Outcomes, Not Inputs</h3>
-                <p className="text-stone-600 mb-0">
-                  We don&apos;t care what certifications a farm has. We care what the food
-                  actually contains. A farm can follow perfect practices and still produce
-                  mediocre fruit if the soil is depleted or the variety is wrong. We measure
-                  the result, not the process.
-                </p>
+            <div className="grid md:grid-cols-5 gap-6 mb-12">
+              <div className="card p-6 text-center">
+                <div className="text-3xl mb-2" style={{ color: 'var(--color-forest)' }}>S</div>
+                <h3 className="text-lg mb-2">Soil</h3>
+                <p className="text-sm text-stone-600">Mineralized, balanced foundation</p>
               </div>
 
-              <div className="card p-6" style={{ borderLeft: '4px solid var(--color-forest)' }}>
-                <h3 className="text-xl mb-3">Show the Data</h3>
-                <p className="text-stone-600 mb-0">
-                  Every claim we make has a number behind it. When we say our citrus is 11°+ brix,
-                  that&apos;s based on refractometer readings at harvest. When we say our beef is 6:1 omega
-                  ratio, that&apos;s from lab analysis. We don&apos;t hide behind vague terms like &ldquo;premium.&rdquo;
-                </p>
+              <div className="card p-6 text-center">
+                <div className="text-3xl mb-2" style={{ color: 'var(--color-forest)' }}>H</div>
+                <h3 className="text-lg mb-2">Heritage</h3>
+                <p className="text-sm text-stone-600">Genetics set maximum potential</p>
               </div>
 
-              <div className="card p-6" style={{ borderLeft: '4px solid var(--color-forest)' }}>
-                <h3 className="text-xl mb-3">Acknowledge Limitations</h3>
-                <p className="text-stone-600 mb-0">
-                  We can&apos;t test everything. Mineral density testing is expensive and not widely
-                  available. Some quality factors are difficult to quantify. Where we don&apos;t have
-                  data, we say so. Where our methodology has gaps, we acknowledge them.
-                </p>
+              <div className="card p-6 text-center">
+                <div className="text-3xl mb-2" style={{ color: 'var(--color-forest)' }}>A</div>
+                <h3 className="text-lg mb-2">Agricultural</h3>
+                <p className="text-sm text-stone-600">Practices express the potential</p>
               </div>
 
-              <div className="card p-6" style={{ borderLeft: '4px solid var(--color-forest)' }}>
-                <h3 className="text-xl mb-3">Be Honest About Competitors</h3>
-                <p className="text-stone-600 mb-0">
-                  When a competitor product tests better than expected, we say so. Our goal isn&apos;t
-                  to make everyone else look bad—it&apos;s to help people find quality. If someone
-                  else is doing it right, that&apos;s worth knowing.
+              <div className="card p-6 text-center">
+                <div className="text-3xl mb-2" style={{ color: 'var(--color-forest)' }}>R</div>
+                <h3 className="text-lg mb-2">Ripen</h3>
+                <p className="text-sm text-stone-600">Peak harvest window timing</p>
+              </div>
+
+              <div className="card p-6 text-center">
+                <div className="text-3xl mb-2" style={{ color: 'var(--color-forest)' }}>E</div>
+                <h3 className="text-lg mb-2">Enrich</h3>
+                <p className="text-sm text-stone-600">Measured outcome verification</p>
+              </div>
+            </div>
+
+            <div className="card-parchment card p-6">
+              <h3 className="text-xl mb-4">The Fielder Thesis (Unique in the World)</h3>
+              <div className="text-stone-600 space-y-3">
+                <p className="mb-0">
+                  <strong>Best S</strong> (Alternative Ag mineralized soil science)<br />
+                  + <strong>Best H</strong> (Heritage cultivars - highest genetic potential)<br />
+                  + <strong>Minimal A</strong> (best S + best H need fewer inputs)<br />
+                  + <strong>Optimal R</strong> (proper harvest timing)<br />
+                  = <strong>Highest E</strong> in BOTH primary AND secondary nutrition
                 </p>
               </div>
             </div>
@@ -74,91 +84,70 @@ export default function MethodologyPage() {
         </div>
       </section>
 
-      {/* What We Measure */}
+      {/* Pillar Interconnectivity */}
       <section className="section section-cream">
         <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="mb-8">What We Measure</h2>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="mb-8">How the Pillars Interact</h2>
 
-            <div className="space-y-12">
-              {/* Citrus */}
-              <div>
-                <h3 className="text-2xl mb-4" style={{ color: 'var(--color-forest)' }}>Citrus</h3>
-
-                <div className="space-y-4">
-                  <div className="card p-4">
-                    <h4 className="font-medium mb-2">Brix (Dissolved Solids)</h4>
-                    <p className="text-sm text-stone-600 mb-2">
-                      Measured with a refractometer at harvest. Brix is expressed in degrees (°Bx)
-                      and represents the percentage of dissolved solids—carbohydrates, minerals, and vitamins—in the juice.
-                    </p>
-                    <p className="text-sm text-stone-500 mb-0">
-                      <strong>Method:</strong> Random sample of fruit from each harvest lot. Juice extracted,
-                      tested with calibrated digital refractometer. Multiple readings averaged.
-                    </p>
-                  </div>
-
-                  <div className="card p-4">
-                    <h4 className="font-medium mb-2">Acid Ratio</h4>
-                    <p className="text-sm text-stone-600 mb-2">
-                      The brix-to-acid ratio affects perceived sweetness. High brix with balanced acidity
-                      produces the best flavor. Too little acid and fruit tastes flat.
-                    </p>
-                    <p className="text-sm text-stone-500 mb-0">
-                      <strong>Method:</strong> Titration testing on juice samples.
-                    </p>
-                  </div>
-
-                  <div className="card p-4">
-                    <h4 className="font-medium mb-2">Days from Tree to Customer</h4>
-                    <p className="text-sm text-stone-600 mb-2">
-                      Freshness matters. We track the time from harvest to shipment.
-                      Grocery store citrus can be weeks old before you see it.
-                    </p>
-                    <p className="text-sm text-stone-500 mb-0">
-                      <strong>Method:</strong> Internal tracking from harvest date to ship date.
-                    </p>
-                  </div>
-                </div>
+            <div className="space-y-6">
+              <div className="card p-6">
+                <h3 className="text-xl mb-3">H (Heritage) = Genetic Ceiling</h3>
+                <p className="text-stone-600 mb-0">
+                  Cultivar + rootstock sets MAXIMUM potential. A commodity cultivar can&apos;t be overcome
+                  even with perfect soil and practices. <strong>Example:</strong> Washington Navel on Carrizo
+                  rootstock (base 11.5 + 0.6 modifier) = 12.1 Brix genetic ceiling.
+                </p>
               </div>
 
-              {/* Beef */}
-              <div>
-                <h3 className="text-2xl mb-4" style={{ color: 'var(--color-forest)' }}>Beef</h3>
+              <div className="card p-6">
+                <h3 className="text-xl mb-3">S ↔ A = Compensatory Relationship</h3>
+                <p className="text-stone-600 mb-3">
+                  Soil (S) and Agricultural practices (A) can compensate for each other:
+                </p>
+                <ul className="text-sm text-stone-600 space-y-2">
+                  <li><strong>Annual precise fertility:</strong> Average S + High A inputs = Good Brix</li>
+                  <li><strong>Organic soil banking:</strong> Good S + Lower A inputs = Good Brix</li>
+                  <li><strong>Mineralized soil science:</strong> Best S + Optimized A = BEST Brix</li>
+                </ul>
+                <p className="text-stone-600 mt-3 mb-0">
+                  Better S = less A inputs needed. Only <strong>mineralized soil</strong> (S pillar) actually
+                  impacts nutrition maximally.
+                </p>
+              </div>
 
-                <div className="space-y-4">
-                  <div className="card p-4">
-                    <h4 className="font-medium mb-2">Omega-6 to Omega-3 Ratio</h4>
-                    <p className="text-sm text-stone-600 mb-2">
-                      The most important health metric for beef. Measures the balance of fatty acids
-                      that affect inflammation. Lower ratios are better.
-                    </p>
-                    <p className="text-sm text-stone-500 mb-0">
-                      <strong>Method:</strong> Third-party lab analysis of fatty acid profiles.
-                      EPA, DHA, ALA, and other fatty acids quantified.
-                    </p>
+              <div className="card p-6">
+                <h3 className="text-xl mb-3">R (Ripen) = Express or Waste</h3>
+                <p className="text-stone-600 mb-0">
+                  Timing determines whether you express or waste the S+H+A potential. Peak harvest window
+                  for citrus: ±2 weeks from optimal ripeness. Early harvest sacrifices quality even for
+                  climacteric fruits (apples, peaches). Non-climacteric (citrus, berries) MUST ripen on plant.
+                </p>
+              </div>
+
+              <div className="card p-6">
+                <h3 className="text-xl mb-3">E (Enrich) = Proof</h3>
+                <p className="text-stone-600 mb-3">
+                  Actual measurement validates the framework. Two buckets:
+                </p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 className="font-medium text-sm mb-2">Maximize the Good</h4>
+                    <ul className="text-sm text-stone-600 space-y-1">
+                      <li>• Brix / sugar quality</li>
+                      <li>• Vitamins &amp; minerals</li>
+                      <li>• Omega-3 fatty acids</li>
+                      <li>• Polyphenols &amp; antioxidants</li>
+                    </ul>
                   </div>
-
-                  <div className="card p-4">
-                    <h4 className="font-medium mb-2">EPA/DHA Content</h4>
-                    <p className="text-sm text-stone-600 mb-2">
-                      These specific omega-3 fatty acids have the strongest health benefits.
-                      Grass-fed beef can have 2-4x the EPA of grain-fed.
-                    </p>
-                    <p className="text-sm text-stone-500 mb-0">
-                      <strong>Method:</strong> Gas chromatography analysis at certified labs.
-                    </p>
-                  </div>
-
-                  <div className="card p-4">
-                    <h4 className="font-medium mb-2">Time on Pasture</h4>
-                    <p className="text-sm text-stone-600 mb-2">
-                      Longer time on pasture generally correlates with better fatty acid profiles.
-                      Most beef is finished at 12-14 months. Our standard is 24 months.
-                    </p>
-                    <p className="text-sm text-stone-500 mb-0">
-                      <strong>Method:</strong> Ranch records and verification of feeding practices.
-                    </p>
+                  <div>
+                    <h4 className="font-medium text-sm mb-2">Minimize the Bad</h4>
+                    <ul className="text-sm text-stone-600 space-y-1">
+                      <li>• Excess omega-6</li>
+                      <li>• High PUFA content</li>
+                      <li>• Pesticide residues (separate axis)</li>
+                      <li>• Heavy metals</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -167,48 +156,63 @@ export default function MethodologyPage() {
         </div>
       </section>
 
-      {/* What We Don't Measure (Yet) */}
+      {/* Intellectually Honest Positions */}
       <section className="section">
         <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="mb-4">What We Don&apos;t Measure (Yet)</h2>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="mb-4">Intellectually Honest Positions</h2>
             <p className="text-lg mb-8 text-stone-600">
-              Transparency means acknowledging gaps. Here&apos;s what we&apos;d like to measure
-              but don&apos;t have reliable, affordable methods for.
+              We have to tell the truth—even when it&apos;s uncomfortable for both sides.
             </p>
 
-            <div className="space-y-4">
-              <div className="card p-4 bg-stone-50">
-                <h4 className="font-medium mb-2">Mineral Density</h4>
-                <p className="text-sm text-stone-600 mb-0">
-                  How much magnesium, zinc, iron, etc. is in the food? Testing is expensive
-                  and results vary widely by lab. We&apos;re evaluating partners who can provide
-                  reliable, affordable mineral analysis.
+            <div className="space-y-6">
+              <div className="card p-6">
+                <h3 className="text-xl mb-3">Synthetic Pesticides</h3>
+                <p className="text-stone-600 mb-3">
+                  <strong>The fear-based claim:</strong> &ldquo;Toxic chemicals poisoning our food&rdquo;
+                </p>
+                <p className="text-stone-600 mb-3">
+                  <strong>The scientific reality:</strong> There are MORE natural pesticides INSIDE produce
+                  than synthetic pesticides OUTSIDE. Bruce Ames (UC Berkeley): 99.99% of dietary pesticides
+                  are natural—produced by plants themselves as defense compounds. Plants produce natural
+                  pesticides at FAR higher concentrations than synthetic residue levels.
+                </p>
+                <p className="text-stone-600 mb-0">
+                  <strong>Fielder&apos;s position:</strong> Not a quality factor—separate axis from nutrition.
+                  Pesticides do NOT reduce nutritional quality (Brix, minerals, vitamins).
                 </p>
               </div>
 
-              <div className="card p-4 bg-stone-50">
-                <h4 className="font-medium mb-2">Antioxidant Content</h4>
-                <p className="text-sm text-stone-600 mb-0">
-                  Polyphenols, flavonoids, and other beneficial compounds. Brix is a partial
-                  proxy (higher brix correlates with higher antioxidants), but direct measurement
-                  is complex.
+              <div className="card p-6">
+                <h3 className="text-xl mb-3">GMOs</h3>
+                <p className="text-stone-600 mb-3">
+                  <strong>The fear-based claim:</strong> &ldquo;Frankenfoods destroying our health&rdquo;
+                </p>
+                <p className="text-stone-600 mb-3">
+                  <strong>The scientific reality:</strong> After decades of research, NOT proven harmful
+                  to human health.
+                </p>
+                <p className="text-stone-600 mb-0">
+                  <strong>Fielder&apos;s position:</strong> Avoid under PRECAUTIONARY PRINCIPLE, not proven
+                  harm. GMO feed acceptable for livestock (doesn&apos;t transfer to meat). What DOES transfer
+                  and accumulate: fatty acid profile (omega ratios).
                 </p>
               </div>
 
-              <div className="card p-4 bg-stone-50">
-                <h4 className="font-medium mb-2">Pesticide Residue</h4>
-                <p className="text-sm text-stone-600 mb-0">
-                  We work with farms that minimize synthetic inputs, but we don&apos;t routinely
-                  test for residues. This may be added as testing becomes more accessible.
+              <div className="card p-6">
+                <h3 className="text-xl mb-3">Organic vs Conventional</h3>
+                <p className="text-stone-600 mb-3">
+                  <strong>The misconception:</strong> Organic = healthier because fewer toxic pesticides
                 </p>
-              </div>
-
-              <div className="card p-4 bg-stone-50">
-                <h4 className="font-medium mb-2">Soil Health Metrics</h4>
-                <p className="text-sm text-stone-600 mb-0">
-                  We assess farms qualitatively, but don&apos;t have standardized soil test data
-                  for all sources. Building this database is a long-term goal.
+                <p className="text-stone-600 mb-3">
+                  <strong>The reality:</strong> DIFFERENT MODELS, not better/worse. Organic = long-term
+                  soil banking approach. Conventional = annual fertility approach. <strong>Neither inherently
+                  produces higher nutrition</strong>—ONLY mineralization does that.
+                </p>
+                <p className="text-stone-600 mb-0">
+                  Organic&apos;s benefits (when they exist) are from SECONDARY nutrition (polyphenols from stress
+                  response), not pesticide absence. A conventional apple with 14 Brix is MORE nutritious than
+                  an organic apple with 10 Brix.
                 </p>
               </div>
             </div>
@@ -216,32 +220,96 @@ export default function MethodologyPage() {
         </div>
       </section>
 
-      {/* Comparison Testing */}
+      {/* Claim Inference Model */}
       <section className="section section-cream">
         <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="mb-4">Comparison Testing</h2>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="mb-4">Claim Inference Model (Beef)</h2>
             <p className="text-lg mb-8 text-stone-600">
-              We don&apos;t just test our own products. We buy competitor products
-              and test them too. Same methodology, side by side.
+              How we decode what brands say vs don&apos;t say. The gaps in claims are often
+              more telling than the claims themselves.
             </p>
 
-            <div className="card p-6">
-              <h3 className="text-xl mb-4">&ldquo;Same Label, Different Nutrition&rdquo;</h3>
-              <p className="text-stone-600 mb-4">
-                Two products can have identical labels—both &ldquo;grass-fed,&rdquo; both &ldquo;organic,&rdquo;
-                both &ldquo;premium&rdquo;—and have completely different quality. We test to find out.
+            <div className="card p-6 mb-8">
+              <h3 className="text-xl mb-4">SHARE Profiles for Beef</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-stone-300">
+                      <th className="text-left py-3 px-4">Profile</th>
+                      <th className="text-left py-3 px-4">Required Claims</th>
+                      <th className="text-left py-3 px-4">CAFO?</th>
+                      <th className="text-left py-3 px-4">Omega</th>
+                      <th className="text-left py-3 px-4">Tier</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-stone-200">
+                      <td className="py-3 px-4 font-medium">A: True Grass</td>
+                      <td className="py-3 px-4">&ldquo;100% grass-fed&rdquo; OR &ldquo;grass-finished&rdquo;</td>
+                      <td className="py-3 px-4">No</td>
+                      <td className="py-3 px-4">2-3:1</td>
+                      <td className="py-3 px-4" style={{ color: 'var(--color-forest)' }}>Premium</td>
+                    </tr>
+                    <tr className="border-b border-stone-200">
+                      <td className="py-3 px-4 font-medium">B: True Pasture</td>
+                      <td className="py-3 px-4">&ldquo;Pasture-raised&rdquo; + &ldquo;no feedlot/CAFO&rdquo;</td>
+                      <td className="py-3 px-4">No</td>
+                      <td className="py-3 px-4">4-6:1</td>
+                      <td className="py-3 px-4" style={{ color: 'var(--color-forest)' }}>Premium</td>
+                    </tr>
+                    <tr className="border-b border-stone-200">
+                      <td className="py-3 px-4 font-medium">C: Marketing Grass</td>
+                      <td className="py-3 px-4">&ldquo;Grass-fed&rdquo; only (no finishing claim)</td>
+                      <td className="py-3 px-4">Yes</td>
+                      <td className="py-3 px-4">8-15:1</td>
+                      <td className="py-3 px-4">Standard</td>
+                    </tr>
+                    <tr className="border-b border-stone-200">
+                      <td className="py-3 px-4 font-medium">D: Marketing Pasture</td>
+                      <td className="py-3 px-4">&ldquo;Pasture-raised&rdquo; only (no CAFO exclusion)</td>
+                      <td className="py-3 px-4">Yes</td>
+                      <td className="py-3 px-4">12-18:1</td>
+                      <td className="py-3 px-4">Standard</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 bg-stone-100">
+                      <td className="py-3 px-4 font-medium text-stone-500">E: Commodity</td>
+                      <td className="py-3 px-4 text-stone-500">Generic or no process claims</td>
+                      <td className="py-3 px-4 text-stone-500">Yes</td>
+                      <td className="py-3 px-4 text-stone-500">15-20:1</td>
+                      <td className="py-3 px-4 text-stone-500">Commodity</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 bg-stone-100">
+                      <td className="py-3 px-4 font-medium text-stone-500">E2: &ldquo;Natural&rdquo;</td>
+                      <td className="py-3 px-4 text-stone-500">Commodity + one marketing claim</td>
+                      <td className="py-3 px-4 text-stone-500">Yes</td>
+                      <td className="py-3 px-4 text-stone-500">15-20:1</td>
+                      <td className="py-3 px-4 text-stone-500">Commodity</td>
+                    </tr>
+                    <tr className="bg-red-50">
+                      <td className="py-3 px-4 font-medium text-red-600">F: Premium CAFO</td>
+                      <td className="py-3 px-4 text-red-600">Breed/grade only (Wagyu, Prime), no process</td>
+                      <td className="py-3 px-4 text-red-600">Yes</td>
+                      <td className="py-3 px-4 text-red-600">20-26:1</td>
+                      <td className="py-3 px-4 text-red-600">WORST</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="card-parchment card p-6">
+              <h3 className="text-xl mb-3">The Silence Signals</h3>
+              <p className="text-stone-600 mb-3">
+                <strong>If they DON&apos;T say &ldquo;grass-finished&rdquo; or &ldquo;100%&rdquo;:</strong> Assume grain-finished in CAFO.
+              </p>
+              <p className="text-stone-600 mb-3">
+                <strong>If they DON&apos;T say &ldquo;no feedlot&rdquo; / &ldquo;no CAFO&rdquo;:</strong> Assume CAFO finishing.
               </p>
               <p className="text-stone-600 mb-0">
-                Comparison reports are published in our library. When competitors test well,
-                we say so. When they don&apos;t, the data speaks for itself.
+                <strong>If they don&apos;t say ANY process claim at all:</strong> Extended CAFO (hiding it intentionally).
               </p>
             </div>
-
-            <p className="text-sm text-stone-500 mt-4">
-              Legal note: Comparison testing uses products purchased through normal retail channels.
-              All tests are conducted by the same methods we use for our own products.
-            </p>
           </div>
         </div>
       </section>
@@ -250,17 +318,17 @@ export default function MethodologyPage() {
       <section className="section section-forest">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="mb-6">Questions About Our Methods?</h2>
+            <h2 className="mb-6">Change the World</h2>
             <p className="text-lg text-white/90 mb-8">
-              We&apos;re committed to transparency. If you want to know more about how
-              we test, what data we have, or how to interpret results—ask.
+              The problem we hear constantly: &ldquo;I&apos;m just not sure what to eat anymore.&rdquo;
+              Fielder gives clear, science-backed answers about food quality instead of label-reading theater.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/fielder" className="btn btn-primary">
                 Back to Fielder
               </Link>
               <Link href="/learn" className="btn btn-outline border-white text-white hover:bg-white/10">
-                Learn More
+                Learn S.H.A.R.E.
               </Link>
             </div>
           </div>

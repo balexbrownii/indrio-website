@@ -70,9 +70,10 @@ export default function LearnPage() {
               <div>
                 <h3 className="text-2xl mb-4" style={{ color: 'var(--color-forest)' }}>What is Brix?</h3>
                 <p className="text-lg mb-4">
-                  Brix (°Bx) measures dissolved solids in fruit—carbohydrates, minerals, and vitamins.
-                  Higher brix means more nutritious produce. While the primary carbohydrate is fructose,
-                  brix isn&apos;t just about sweetness—it&apos;s a measure of overall nutritional density.
+                  Brix (°Bx) measures dissolved solids in fruit—a proxy for nutrient density. It measures
+                  carbohydrates, minerals, and vitamins dissolved in the juice. While the primary carbohydrate
+                  is fructose, brix isn&apos;t just about sweetness—it&apos;s a comprehensive measure of
+                  nutritional quality.
                 </p>
                 <div className="card p-6">
                   <h4 className="font-medium mb-4">Citrus Brix Ranges</h4>
@@ -96,9 +97,10 @@ export default function LearnPage() {
                   </div>
                 </div>
                 <p className="text-sm text-stone-500 mt-4">
-                  Why doesn&apos;t the grocery store sell high-brix fruit? Because they pay farmers
-                  for appearance and yield, not nutritional quality. And high-brix fruit is often smaller—more nutrition
-                  per ounce, but fewer ounces per box.
+                  Why doesn&apos;t the grocery store sell high-brix fruit? Because USDA grades focus on
+                  external appearance, not nutrition or flavor. Farmers get paid for yield and appearance, not
+                  internal quality. High-brix fruit is often smaller—more nutrition per ounce, but fewer ounces
+                  per box.
                 </p>
               </div>
 
@@ -114,26 +116,36 @@ export default function LearnPage() {
                   <h4 className="font-medium mb-4">Beef Omega-6 to Omega-3 Ratios</h4>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span>Feedlot/CAFO beef</span>
-                      <span className="font-medium text-red-600">15-20:1</span>
+                      <span className="font-medium" style={{ color: 'var(--color-forest)' }}>Exceptional (true grass-fed)</span>
+                      <span className="font-medium">≤3:1</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span>&ldquo;Grass-fed&rdquo; (often grain-finished)</span>
-                      <span className="font-medium text-amber-600">8-12:1</span>
+                      <span>Premium (good grass-finished)</span>
+                      <span className="font-medium text-green-600">3-6:1</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span>Good pasture-raised</span>
-                      <span className="font-medium text-green-600">4-6:1</span>
+                      <span>Standard (mixed feeding)</span>
+                      <span className="font-medium text-amber-600">6-12:1</span>
                     </div>
-                    <div className="flex items-center justify-between" style={{ color: 'var(--color-forest)' }}>
-                      <span>Exceptional (100% grass, 24+ months)</span>
-                      <span className="font-medium">2-3:1</span>
+                    <div className="flex items-center justify-between">
+                      <span>Commodity (feedlot/grain-fed)</span>
+                      <span className="font-medium text-red-600">&gt;12:1</span>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span>Typical feedlot</span>
+                      <span className="font-medium text-red-700">15-20:1</span>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="font-medium">Premium Wagyu (WORST)</span>
+                      <span className="font-medium text-red-900">20-26:1</span>
                     </div>
                   </div>
                 </div>
                 <p className="text-sm text-stone-500 mt-4">
-                  Everglades Ranch beef tests at 6:1—within the &ldquo;good pasture-raised&rdquo; range.
-                  That&apos;s 3x better than feedlot beef and meaningfully different for your health.
+                  Note: Premium Wagyu has the worst omega ratio because of extended feedlot time (12+ months).
+                  Consumers pay 5x more for beef that&apos;s actively worse for their health. The omega ratio
+                  is THE measurable proof of feeding regime quality—fatty acids accumulate in tissue based on
+                  the animal&apos;s diet.
                 </p>
               </div>
 
@@ -141,28 +153,31 @@ export default function LearnPage() {
               <div>
                 <h3 className="text-2xl mb-4" style={{ color: 'var(--color-forest)' }}>Why Harvest Timing Matters</h3>
                 <p className="text-lg mb-4">
-                  Not all fruit ripens after picking. Climacteric fruits (bananas, avocados, tomatoes)
-                  continue to ripen. Non-climacteric fruits (citrus, grapes, berries) don&apos;t.
+                  The question isn&apos;t whether fruit ripens on or off the tree—it&apos;s whether
+                  early harvest wastes the genetic potential built through proper soil, cultivar selection,
+                  and growing practices.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="card p-4">
-                    <h4 className="font-medium mb-2">Climacteric (ripens after picking)</h4>
+                    <h4 className="font-medium mb-2">Climacteric (can develop after picking)</h4>
                     <p className="text-sm text-stone-600 mb-0">
-                      Bananas, avocados, tomatoes, peaches, apples. Can be picked early
-                      and will develop some sweetness.
+                      Bananas, avocados, tomatoes, peaches, apples. CAN ripen post-harvest, but early
+                      harvest still sacrifices the quality potential. They develop texture and some sugars,
+                      but they never reach their full nutritional expression.
                     </p>
                   </div>
                   <div className="card p-4" style={{ borderColor: 'var(--color-accent)' }}>
-                    <h4 className="font-medium mb-2">Non-Climacteric (what you pick is what you get)</h4>
+                    <h4 className="font-medium mb-2">Non-Climacteric (quality fixed at harvest)</h4>
                     <p className="text-sm text-stone-600 mb-0">
-                      Citrus, grapes, strawberries, cherries. Must be tree-ripened.
-                      Picked green = forever mediocre.
+                      Citrus, grapes, strawberries, cherries. Quality is completely fixed at harvest.
+                      What you pick is what you get. Picked early = forever mediocre.
                     </p>
                   </div>
                 </div>
                 <p className="text-sm text-stone-500 mt-4">
-                  This is why grocery store citrus tastes like water—it&apos;s picked before it&apos;s ripe
-                  to meet USDA minimums. But unlike a banana, it will never get sweeter.
+                  Grocery store produce is picked early to meet USDA minimums, not to express peak quality.
+                  The issue isn&apos;t shipping time—it&apos;s that harvest timing is optimized for meeting
+                  legal standards rather than maximizing the genetic potential built through S.H.A.R.E. principles.
                 </p>
               </div>
             </div>
