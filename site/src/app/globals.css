@@ -1,0 +1,493 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   INDRIO DESIGN SYSTEM
+   Adapted from Fielder: Documentary Heritage meets Swiss Modernism
+   ============================================================================ */
+
+:root {
+  /* Official Brand Colors from Brand Print */
+  --color-grove: #2D4834;        /* Primary - Forest green */
+  --color-parchment: #EDE8D3;    /* Background - Warm cream */
+  --color-leaf: #809926;         /* Accent - Yellow-green */
+  --color-sky: #A6CDC2;          /* Accent - Teal/mint */
+  --color-mandarin: #E78B00;     /* Accent - Orange */
+
+  /* Extended palette */
+  --color-cream: #FDFBF7;
+  --color-cream-dark: #F5F2EC;
+  --color-linen: #FAF0E6;
+  --color-white: #FFFFFF;
+
+  /* Text hierarchy - Stone palette */
+  --color-charcoal: #1C1917;
+  --color-stone: #44403C;
+  --color-stone-light: #78716C;
+  --color-stone-muted: #A8A29E;
+
+  /* Primary accent - Mandarin Orange */
+  --color-accent: #E78B00;
+  --color-accent-dark: #C97800;
+  --color-accent-light: #F59E1A;
+
+  /* Secondary accent - Grove Green */
+  --color-forest: #2D4834;
+  --color-forest-light: #3D5A4C;
+  --color-sage: #809926;
+  --color-sage-light: #9AB03D;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* Typography - uses Next.js font variables */
+  --font-display: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  --font-body: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Shadows - Warm tinted */
+  --shadow-sm: 0 1px 2px 0 rgb(120 113 108 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(120 113 108 / 0.07), 0 2px 4px -2px rgb(120 113 108 / 0.07);
+  --shadow-lg: 0 10px 15px -3px rgb(120 113 108 / 0.08), 0 4px 6px -4px rgb(120 113 108 / 0.08);
+
+  /* Border radius */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.375rem;
+  --radius-xl: 0.5rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease-out;
+  --transition-slow: 300ms ease-out;
+}
+
+@theme inline {
+  --color-background: var(--color-cream);
+  --color-foreground: var(--color-charcoal);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
+}
+
+/* ============================================================================
+   BASE STYLES
+   ============================================================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-charcoal);
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.25rem; }
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+}
+
+p {
+  color: var(--color-stone);
+  line-height: 1.7;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: var(--color-stone);
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: var(--color-forest);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-accent);
+  color: white;
+}
+
+/* ============================================================================
+   BUTTONS
+   ============================================================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.75rem;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-dark);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--color-forest);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-forest-light);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-forest);
+  border: 2px solid var(--color-forest);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-forest);
+  color: white;
+}
+
+/* ============================================================================
+   LAYOUT
+   ============================================================================ */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: var(--space-4xl) var(--space-lg);
+}
+
+.section-cream {
+  background-color: var(--color-cream-dark);
+}
+
+.section-parchment {
+  background-color: var(--color-parchment);
+}
+
+.section-forest {
+  background-color: var(--color-forest);
+  color: white;
+}
+
+.section-forest h1,
+.section-forest h2,
+.section-forest h3,
+.section-forest p {
+  color: white;
+}
+
+.section-forest .lead {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Hero sections with background images */
+.hero-dark h1,
+.hero-dark h2,
+.hero-dark h3,
+.hero-dark p,
+.hero-dark blockquote,
+.hero-dark .lead {
+  color: white !important;
+}
+
+.hero-dark .lead {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* ============================================================================
+   BLOCKQUOTE (Mission Statement)
+   ============================================================================ */
+
+blockquote {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--color-forest);
+  border-left: 4px solid var(--color-accent);
+  padding-left: var(--space-lg);
+  margin: var(--space-2xl) 0;
+  font-style: italic;
+}
+
+blockquote cite {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-style: normal;
+  color: var(--color-stone-light);
+  margin-top: var(--space-md);
+}
+
+/* ============================================================================
+   CARDS
+   ============================================================================ */
+
+.card {
+  background: var(--color-white);
+  border: 1px solid rgba(120, 113, 108, 0.15);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.card-parchment {
+  background: var(--color-parchment);
+  border: 1px solid rgba(120, 113, 108, 0.2);
+}
+
+/* ============================================================================
+   NAVIGATION
+   ============================================================================ */
+
+.nav {
+  background: var(--color-cream);
+  border-bottom: 1px solid rgba(120, 113, 108, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-stone);
+  padding: 0.5rem 1rem;
+  transition: color var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+.nav-link-active {
+  color: var(--color-accent);
+}
+
+/* ============================================================================
+   FOOTER
+   ============================================================================ */
+
+.footer {
+  background: var(--color-forest);
+  color: white;
+  padding: var(--space-3xl) var(--space-lg);
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer h4 {
+  color: white;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-md);
+}
+
+/* ============================================================================
+   SHARE FRAMEWORK ICONS
+   ============================================================================ */
+
+.share-icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-parchment);
+  border-radius: var(--radius-md);
+  color: var(--color-forest);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* ============================================================================
+   FORM ELEMENTS
+   ============================================================================ */
+
+.input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: var(--color-white);
+  border: 1px solid rgba(120, 113, 108, 0.3);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(226, 94, 37, 0.1);
+}
+
+.input::placeholder {
+  color: var(--color-stone-muted);
+}
+
+/* ============================================================================
+   BRAND CARDS
+   ============================================================================ */
+
+.brand-card {
+  background: var(--color-white);
+  border: 1px solid rgba(120, 113, 108, 0.15);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.brand-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.brand-card .quality-badge {
+  display: inline-block;
+  background: var(--color-sage-light);
+  color: var(--color-forest);
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  margin-top: var(--space-md);
+}
+
+/* ============================================================================
+   ANIMATIONS
+   ============================================================================ */
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in var(--transition-slow) ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up var(--transition-slow) ease-out;
+}
+
+/* ============================================================================
+   TEXTURE (Optional Paper Effect)
+   ============================================================================ */
+
+.texture-paper {
+  position: relative;
+}
+
+.texture-paper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.02;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* ============================================================================
+   RESPONSIVE UTILITIES
+   ============================================================================ */
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .hide-desktop {
+    display: none;
+  }
+}
