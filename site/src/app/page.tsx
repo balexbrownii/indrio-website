@@ -192,8 +192,8 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
               {[
                 { letter: 'S', word: 'Soil Health', desc: 'Healthy soil builds nutrition' },
-                { letter: 'H', word: 'Heritage', desc: 'Varieties bred for flavor' },
-                { letter: 'A', word: 'Agricultural', desc: 'Practices that matter' },
+                { letter: 'H', word: 'Heritage Cultivars', desc: 'Varieties bred for flavor' },
+                { letter: 'A', word: 'Agricultural Practices', desc: 'Practices that matter' },
                 { letter: 'R', word: 'Ripen', desc: 'Harvested at peak' },
                 { letter: 'E', word: 'Enrich', desc: 'Measuring outcomes' },
               ].map((item) => (

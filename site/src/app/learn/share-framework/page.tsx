@@ -33,8 +33,8 @@ export default function ShareFrameworkPage() {
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-12">
               {[
                 { letter: 'S', word: 'Soil Health', color: '#8B4513' },
-                { letter: 'H', word: 'Heritage', color: '#2E7D32' },
-                { letter: 'A', word: 'Agricultural', color: '#1565C0' },
+                { letter: 'H', word: 'Heritage Cultivars', color: '#2E7D32' },
+                { letter: 'A', word: 'Agricultural Practices', color: '#1565C0' },
                 { letter: 'R', word: 'Ripen', color: '#F57C00' },
                 { letter: 'E', word: 'Enrich', color: '#7B1FA2' },
               ].map((item) => (
@@ -95,7 +95,7 @@ export default function ShareFrameworkPage() {
                   H
                 </div>
                 <div>
-                  <h2 className="mb-0">Heritage</h2>
+                  <h2 className="mb-0">Heritage Cultivars</h2>
                   <p className="text-stone-600 mb-0">Genetics set the ceiling</p>
                 </div>
               </div>
@@ -127,7 +127,7 @@ export default function ShareFrameworkPage() {
                   A
                 </div>
                 <div>
-                  <h2 className="mb-0">Agricultural</h2>
+                  <h2 className="mb-0">Agricultural Practices</h2>
                   <p className="text-stone-600 mb-0">Practices that actually matter</p>
                 </div>
               </div>
