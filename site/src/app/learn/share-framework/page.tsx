@@ -32,7 +32,7 @@ export default function ShareFrameworkPage() {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-12">
               {[
-                { letter: 'S', word: 'Soil', color: '#8B4513' },
+                { letter: 'S', word: 'Soil Health', color: '#8B4513' },
                 { letter: 'H', word: 'Heritage', color: '#2E7D32' },
                 { letter: 'A', word: 'Agricultural', color: '#1565C0' },
                 { letter: 'R', word: 'Ripen', color: '#F57C00' },
@@ -70,18 +70,12 @@ export default function ShareFrameworkPage() {
                   S
                 </div>
                 <div>
-                  <h2 className="mb-0">Soil</h2>
+                  <h2 className="mb-0">Soil Health</h2>
                   <p className="text-stone-600 mb-0">The foundation of nutrition</p>
                 </div>
               </div>
               <p className="text-lg mb-4">
                 Healthy soil produces healthy plants. It&apos;s that simple—and that profound.
-              </p>
-              <p className="mb-4">
-                Plants can only contain the minerals that exist in the soil they grow in.
-                Industrial agriculture has depleted soils through decades of synthetic fertilizers
-                that provide NPK (nitrogen, phosphorus, potassium) but ignore the dozens of
-                trace minerals that make food nutritious.
               </p>
               <div className="card p-4">
                 <h4 className="font-medium mb-2">What We Look For</h4>

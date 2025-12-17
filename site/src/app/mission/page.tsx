@@ -183,7 +183,7 @@ export default function MissionPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
               {[
-                { letter: 'S', word: 'Soil', desc: 'Healthy soil, healthy food' },
+                { letter: 'S', word: 'Soil Health', desc: 'Healthy soil, healthy food' },
                 { letter: 'H', word: 'Heritage', desc: 'Varieties bred for flavor' },
                 { letter: 'A', word: 'Agricultural', desc: 'Minimal synthetic inputs' },
                 { letter: 'R', word: 'Ripen', desc: 'Picked at peak, not before' },
