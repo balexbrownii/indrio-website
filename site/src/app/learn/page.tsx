@@ -47,11 +47,11 @@ export default function LearnPage() {
                 </p>
               </Link>
 
-              <Link href="#label-decoder" className="card p-6">
+              <Link href="/learn/claim-decoder" className="card p-6">
                 <div className="text-3xl mb-3">🏷️</div>
-                <h3 className="text-xl mb-2">Label Decoder</h3>
+                <h3 className="text-xl mb-2">Claim Decoder</h3>
                 <p className="text-stone-600 text-sm mb-0">
-                  What &ldquo;grass-fed,&rdquo; &ldquo;organic,&rdquo; and other terms actually mean.
+                  S.H.A.R.E. grids showing what labels actually tell you—and what they hide.
                 </p>
               </Link>
             </div>
@@ -281,11 +281,14 @@ export default function LearnPage() {
             </div>
 
             <div className="card-parchment card p-6 mt-8">
-              <p className="text-lg mb-0">
+              <p className="text-lg mb-4">
                 <strong>The pattern:</strong> Labels are written by lawyers to be technically true
                 while creating impressions that aren&apos;t. The solution isn&apos;t better labels—
                 it&apos;s knowing what to measure and who to trust.
               </p>
+              <Link href="/learn/claim-decoder" className="text-sm font-medium" style={{ color: 'var(--color-accent)' }}>
+                See full S.H.A.R.E. grids for each claim →
+              </Link>
             </div>
           </div>
         </div>
