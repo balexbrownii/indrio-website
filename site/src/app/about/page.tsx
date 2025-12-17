@@ -1,69 +1,124 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'About | Indrio Fields',
-  description: 'Family farmers for over 200 years. Building something different so people can eat better.',
+  title: 'About Us | Indrio Fields',
+  description: 'We\'re not a tech startup or a subscription box. We\'re farming families who figured out how to get real food to your door.',
 };
 
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
+      {/* Hero - Empathy First */}
       <section className="section section-parchment texture-paper">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-sm uppercase tracking-widest mb-4" style={{ color: 'var(--color-accent)' }}>
               About Indrio Fields
             </p>
-            <h1 className="mb-6">Family Farmers.<br />Multi-Generational.</h1>
+            <h1 className="mb-6">We Know What You&apos;re Looking For.<br />Because We Were Looking For It Too.</h1>
             <p className="lead">
-              We&apos;re not a subscription box or marketplace. We&apos;re farmers first—
-              with multi-generational expertise—who built a way to ship directly to you.
+              We&apos;re farming families who got tired of watching good food go to waste while stores
+              sold inferior product. So we built a way to get real food directly to people who care.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Origin Story */}
+      {/* The Short Version */}
       <section className="section">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="mb-8">The Story</h2>
-            <div className="space-y-6">
+            <h2 className="mb-8">The Short Version</h2>
+            <div className="space-y-6 text-lg">
               <p>
-                The Brown and Scott families have farmed the Southeast for over 200 years.
-                Citrus groves. Cattle ranches. Row crops. We know this land.
+                <strong>We&apos;re farmers.</strong> The Brown and Scott families have farmed Florida&apos;s
+                Indian River region for over 200 years. Citrus groves. Cattle ranches. We know this land.
               </p>
               <p>
-                Twenty-five years ago, we started selling directly to consumers. Not because
-                it was trendy—farm-to-table wasn&apos;t a thing yet—but because we were tired
-                of watching the best fruit we grew rot while grocery stores sold inferior
-                product at premium prices.
+                <strong>We got frustrated.</strong> Twenty-five years ago, we watched our best fruit rot
+                because the grocery system didn&apos;t want it—too ripe, wrong shape, wouldn&apos;t survive
+                shipping. Meanwhile, stores sold pale, sour oranges at premium prices.
               </p>
               <p>
-                The food system didn&apos;t reward what we were doing right. It rewarded
-                yield, appearance, and shipping durability. Not flavor. Not nutrition.
-                Not the health of the soil we&apos;d been building for generations.
-              </p>
-              <p className="text-xl font-medium" style={{ color: 'var(--color-forest)' }}>
-                So we built our own way to market.
-              </p>
-              <p>
-                Today, Indrio Fields is a family of brands that ships citrus, beef, and
-                specialty foods directly to customers who care about what they eat. No
-                commodity markets. No anonymous supply chains. Just families who grow
-                food, connected to families who eat it.
+                <strong>We built something different.</strong> Direct-to-consumer shipping. Picked ripe,
+                shipped fast, to people who can taste the difference. No middlemen. No commodity markets.
+                Just families who grow food, connected to families who eat it.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Leadership */}
+      {/* Why We Can Help */}
       <section className="section section-cream">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-center mb-12">Leadership</h2>
+            <h2 className="text-center mb-8">Why We Can Help</h2>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="card">
+                <h3 className="text-xl mb-3">We Understand the Problem</h3>
+                <p className="mb-0">
+                  We&apos;ve spent decades inside the food system. We know why grocery store produce
+                  tastes like nothing—because we&apos;ve watched it happen. We know the economics
+                  that push farmers toward yield over flavor. We lived it.
+                </p>
+              </div>
+              <div className="card">
+                <h3 className="text-xl mb-3">We Have the Solution</h3>
+                <p className="mb-0">
+                  200+ years of farming experience. Four generations of citrus growers. 85 years
+                  of cattle ranching. And 25 years of direct-to-consumer shipping. We&apos;ve already
+                  built the infrastructure to get real food to your door.
+                </p>
+              </div>
+              <div className="card">
+                <h3 className="text-xl mb-3">We Measure What Matters</h3>
+                <p className="mb-0">
+                  Brix levels. Omega ratios. Soil health scores. We don&apos;t make vague claims—we
+                  test, measure, and report. If you want to know the numbers behind your food, we
+                  have them.
+                </p>
+              </div>
+              <div className="card">
+                <h3 className="text-xl mb-3">We&apos;re Not Going Anywhere</h3>
+                <p className="mb-0">
+                  This isn&apos;t a venture-backed startup chasing growth. It&apos;s family land we intend
+                  to pass down. We&apos;re building something that lasts, not something to sell.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Name */}
+      <section className="section">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-center mb-8">Why &ldquo;Indrio&rdquo;?</h2>
+            <div className="card-parchment card p-8 text-center">
+              <p className="text-xl mb-4">
+                <strong>Ind</strong> + <strong>Rio</strong> = <strong>Indrio</strong>
+              </p>
+              <p className="text-lg mb-4">
+                &ldquo;Indian&rdquo; in English, &ldquo;River&rdquo; in Spanish. It&apos;s a conjunction
+                that reflects where our family has farmed for over 100 years—Florida&apos;s Indian River region.
+              </p>
+              <p className="text-lg mb-0">
+                Indrio was established in 1924, centered around D.J. Wilcox&apos;s homestead during Florida&apos;s
+                land boom. It sits on the Atlantic Coastal Ridge, in the sweet spot between ocean and river
+                that produces the best citrus in America. The name represents deep roots in a specific place.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership - Condensed */}
+      <section className="section section-cream">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-center mb-8">Who You&apos;re Working With</h2>
             <div className="card p-8">
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 {/* Photo placeholder */}
@@ -80,15 +135,14 @@ export default function AboutPage() {
                   </p>
                   <div className="space-y-4">
                     <p>
-                      Third-generation farmer. Twenty-five years building direct-to-consumer
-                      food businesses. Started by shipping the citrus my father grew, because
-                      watching it rot while inferior fruit sold made no sense.
+                      Third-generation farmer. Twenty-five years building direct-to-consumer food businesses.
+                      Started by shipping the citrus my father grew, because watching it rot while inferior
+                      fruit sold made no sense.
                     </p>
                     <p>
-                      Today I spend my time on quality systems, farmer partnerships, and
-                      figuring out how to fix a food system that rewards the wrong things.
-                      We&apos;re not going to complain our way to a better system. We&apos;re
-                      going to grow our way there.
+                      I spend my time on quality systems and farmer partnerships—figuring out how to pay
+                      farmers for what actually matters. If you have questions about how we grow or why
+                      the numbers matter, I&apos;m happy to explain.
                     </p>
                   </div>
                 </div>
@@ -98,78 +152,42 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* What We Are */}
+      {/* What We're Not */}
       <section className="section">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-center mb-8">What Indrio Fields Is</h2>
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="card">
-                <h3 className="text-xl mb-3">Family Farmer-Owned</h3>
-                <p className="mb-0">
-                  Not a co-op. Not a collective. Not a venture-backed startup.
-                  Owned by families who farm. That&apos;s it.
-                </p>
-              </div>
-              <div className="card">
-                <h3 className="text-xl mb-3">Multi-Generational</h3>
-                <p className="mb-0">
-                  Over 200 years of farming in the Southeast. My kids walk the same
-                  groves my grandfather planted.
-                </p>
-              </div>
-              <div className="card">
-                <h3 className="text-xl mb-3">Vertically Integrated</h3>
-                <p className="mb-0">
-                  We grow it. We pack it. We ship it. No middlemen who don&apos;t know
-                  what they&apos;re handling.
-                </p>
-              </div>
-              <div className="card">
-                <h3 className="text-xl mb-3">Quality-Obsessed</h3>
-                <p className="mb-0">
-                  We measure what matters. Brix. Omega ratios. Soil health. If you
-                  can&apos;t put a number on it, it&apos;s just marketing.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What We're Not */}
-      <section className="section section-cream">
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
             <h2 className="text-center mb-8">What We&apos;re Not</h2>
+            <p className="text-center text-lg mb-8">
+              So you know what you&apos;re getting into.
+            </p>
             <div className="space-y-4">
-              <div className="card-parchment card flex items-start gap-4">
-                <span className="text-2xl">✕</span>
-                <div>
-                  <h4 className="mb-1">Not Anti-Industrial Ag</h4>
-                  <p className="mb-0 text-sm">
-                    The adversary isn&apos;t farmers who grow at scale. It&apos;s a system
-                    that fails to reward flavor, nutrition, and stewardship.
-                  </p>
-                </div>
-              </div>
               <div className="card-parchment card flex items-start gap-4">
                 <span className="text-2xl">✕</span>
                 <div>
                   <h4 className="mb-1">Not a Tech Company</h4>
                   <p className="mb-0 text-sm">
-                    We use technology to ship better and track quality. But we&apos;re
-                    farmers first. The soil matters more than the software.
+                    We use technology to ship better and track quality. But we&apos;re farmers first.
+                    The soil matters more than the software.
                   </p>
                 </div>
               </div>
               <div className="card-parchment card flex items-start gap-4">
                 <span className="text-2xl">✕</span>
                 <div>
-                  <h4 className="mb-1">Not Marketing-First</h4>
+                  <h4 className="mb-1">Not a Subscription Box</h4>
                   <p className="mb-0 text-sm">
-                    The food speaks for itself. We measure what matters—brix, omega ratios,
-                    soil health—and let the numbers tell the story.
+                    Order when you want, what you want. No commitments, no algorithms deciding what
+                    you should eat. Just food from farms you can trust.
+                  </p>
+                </div>
+              </div>
+              <div className="card-parchment card flex items-start gap-4">
+                <span className="text-2xl">✕</span>
+                <div>
+                  <h4 className="mb-1">Not Preachy</h4>
+                  <p className="mb-0 text-sm">
+                    We&apos;re not here to lecture you about organic vs. conventional or shame you
+                    about your choices. We just grow good food and make it available. You decide.
                   </p>
                 </div>
               </div>
@@ -178,44 +196,20 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The Name */}
+      {/* CTA */}
       <section className="section section-forest">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="mb-6">Why &ldquo;Indrio&rdquo;?</h2>
-            <p className="text-lg text-white/90 mb-4">
-              <strong>Ind</strong> + <strong>Rio</strong> = <strong>Indrio</strong>.
-              &ldquo;Indian&rdquo; in English, &ldquo;River&rdquo; in Spanish. It&apos;s a conjunction
-              that reflects where our family has farmed for over 100 years—Florida&apos;s
-              Indian River region.
-            </p>
-            <p className="text-lg text-white/90 mb-4">
-              Indrio was established in 1924, centered around D.J. Wilcox&apos;s homestead
-              during Florida&apos;s land boom. The town sits atop the Atlantic Coastal Ridge,
-              in the sweet spot between ocean and river that grows the best citrus in America.
-            </p>
-            <p className="text-lg text-white/90">
-              The name represents what we&apos;re about: deep roots in a specific place,
-              and a commitment to the land and the families who work it.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="section">
-        <div className="container">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="mb-6">Grow Different. Eat Better.<br />Fix the Food System.</h2>
-            <p className="lead mb-8">
-              That&apos;s our mission. Everything we do flows from there.
+            <h2 className="mb-6">Ready to Taste the Difference?</h2>
+            <p className="lead mb-8 text-white/90">
+              We&apos;ve been doing this for 25 years. The only question is what you want to try first.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/mission" className="btn btn-primary">
-                Read Our Mission
+              <Link href="/brands" className="btn btn-primary">
+                See Your Options
               </Link>
-              <Link href="/brands" className="btn btn-secondary">
-                Explore Our Brands
+              <Link href="/mission" className="btn btn-outline border-white text-white hover:bg-white/10">
+                Read Why It Matters
               </Link>
             </div>
           </div>

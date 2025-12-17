@@ -1,159 +1,155 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Our Brands | Indrio Fields',
-  description: 'The Indrio Fields family of brands. Farmer-owned. Grown in the USA. Rooted in flavor and nutrition.',
+  title: 'Find Your Fit | Indrio Fields',
+  description: 'Florida citrus, Texas grapefruit, American Wagyu beef. Different products for different tables—same commitment to growing it right.',
 };
 
 const brands = [
   {
     name: 'Hale Groves',
-    tagline: 'Florida citrus since 1947.',
-    origin: 'Founded by Steve and Polly Hale, who opened their first roadside fruit stand in Vero Beach after Steve returned from active duty in the U.S. Naval Reserve.',
-    description: 'The Brown and Scott families acquired Hale Groves in 2006, bringing over 200 years of combined farming experience. We ship within days of harvest—never stored in warehouses. The sweet spot between ocean and river that produces the best citrus in America.',
-    metrics: [
-      { label: 'Brix Minimum', value: '11-14°', note: 'Grocery average: 6-8°' },
-      { label: 'Founded', value: '1947', note: 'Vero Beach, Florida' },
-      { label: 'Location', value: 'Indian River', note: 'Florida\'s citrus belt' },
+    tagline: 'Florida citrus that makes people ask where you got it.',
+    forYou: 'Perfect for: Gift-givers, citrus lovers, families who remember what oranges used to taste like.',
+    whatYouGet: [
+      '11-14° brix citrus (vs 6-8° grocery)',
+      'Shipped within days of harvest',
+      'Indian River region—the best citrus soil in America',
     ],
-    products: ['Navel Oranges', 'Ruby Red Grapefruit', 'Honeybells', 'Gift Baskets'],
+    origin: 'Founded in 1947 by Steve and Polly Hale after Steve returned from the Naval Reserve. Our families acquired it in 2006.',
     href: 'https://halegroves.com',
-    featured: true,
+    cta: 'Shop Citrus',
   },
   {
     name: 'Pittman & Davis',
-    tagline: 'Texas citrus since 1926.',
-    origin: 'Founded by partners Frank Davis and Harold Pittman in Harlingen, Texas. They started shipping tree-ripened Rio Grande Valley grapefruit when most citrus was picked green.',
-    description: 'Pittman & Davis joined the Indrio Fields family in 2008, preserving its Texan roots while expanding to specialty foods. We still work with small farms and heritage fruit varieties, honoring a legacy of quality handed down through generations.',
-    metrics: [
-      { label: 'Selection', value: 'Hand-picked', note: 'Every piece inspected' },
-      { label: 'Founded', value: '1926', note: 'Harlingen, Texas' },
-      { label: 'Location', value: 'Rio Grande Valley', note: 'Texas citrus country' },
+    tagline: 'Texas Ruby Reds and heritage varieties you won\'t find in stores.',
+    forYou: 'Perfect for: Texans, grapefruit lovers, people who want specialty foods with their citrus.',
+    whatYouGet: [
+      'Rio Grande Valley citrus since 1926',
+      'Hand-picked, every piece inspected',
+      'Smoked meats and specialty foods',
     ],
-    products: ['Texas Oranges', 'Ruby Red Grapefruit', 'Smoked Meats', 'Gift Boxes'],
+    origin: 'Founded by Frank Davis and Harold Pittman in Harlingen, Texas. They started shipping tree-ripened grapefruit when most citrus was picked green.',
     href: 'https://pittmandavis.com',
-    featured: true,
+    cta: 'Shop Texas Citrus',
   },
   {
     name: 'Sun Harvest Citrus',
-    tagline: 'Fresh-squeezed since 1990.',
-    origin: 'Opened by Sandy McKenzie Nicely on Metro Parkway in Fort Myers. She wanted to bring Indian River fruit to Southwest Florida—and let people watch it being squeezed.',
-    description: 'For over 30 years, Sun Harvest has been one of the best places to visit in Fort Myers. Fresh-squeezed juice made while you watch, handpicked citrus, tropical wines, and famous soft-serve ice cream. A true Florida experience.',
-    metrics: [
-      { label: 'Freshness', value: 'Same-day', note: 'Squeezed when you order' },
-      { label: 'Founded', value: '1990', note: 'Fort Myers, Florida' },
-      { label: 'Experience', value: '1,300+ reviews', note: 'TripAdvisor' },
+    tagline: 'Fresh-squeezed juice made while you watch.',
+    forYou: 'Perfect for: Fort Myers visitors, locals who want farm-fresh, anyone who\'s never had real orange juice.',
+    whatYouGet: [
+      'Juice squeezed the day you drink it',
+      'Watch it happen at our farm store',
+      'Local honey, citrus products, famous soft-serve',
     ],
-    products: ['Fresh-Squeezed Juice', 'Citrus by the Box', 'Local Honey', 'Citrus Products'],
+    origin: 'Opened in 1990 by Sandy McKenzie Nicely. She wanted to bring Indian River quality to Southwest Florida.',
     href: 'https://sunharvestcitrus.com',
-    featured: true,
+    cta: 'Visit Us in Fort Myers',
   },
   {
     name: 'Everglades Ranch',
-    tagline: 'American Wagyu since 1938.',
-    origin: 'For over 85 years, Everglades Ranch has raised cattle in Florida\'s Greater Everglades region. We introduced Japanese Wagyu into our Black Angus herd to create premium American Wagyu.',
-    description: 'Our cattle graze freely on high-Brix forages—nutrient-dense grasses, legumes, and brassicas. Twenty-four months to finish, twice the industry standard. No feedlots, no grain finishing. The result: beef with unmatched marbling and an omega-6 to omega-3 ratio of 2.5:1.',
-    metrics: [
-      { label: 'EPA Omega-3', value: '+1313%', note: 'vs USDA ground beef' },
-      { label: 'Omega Ratio', value: '2.5:1', note: 'vs 7:1 grain-fed' },
-      { label: 'Time to Finish', value: '24 months', note: 'Twice industry standard' },
+    tagline: 'American Wagyu with omega-3s you can actually measure.',
+    forYou: 'Perfect for: Health-conscious families, people who\'ve been disappointed by "grass-fed" labels, serious home cooks.',
+    whatYouGet: [
+      '2.5:1 omega ratio (vs 7:1 grain-fed)',
+      '1313% more EPA omega-3s than USDA average',
+      '24 months on pasture—twice the industry standard',
     ],
-    products: ['Ribeye', 'New York Strip', 'Ground Beef', 'Variety Boxes'],
+    origin: 'For over 85 years, we\'ve raised cattle in Florida\'s Greater Everglades. We introduced Japanese Wagyu genetics to create American Wagyu that\'s both flavorful and nutritious.',
     href: 'https://evergladesranch.com',
-    featured: true,
+    cta: 'Shop Beef',
   },
 ];
 
 export default function BrandsPage() {
   return (
     <>
-      {/* Hero */}
+      {/* Hero - Customer Choice */}
       <section className="section section-parchment texture-paper">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-sm uppercase tracking-widest mb-4" style={{ color: 'var(--color-accent)' }}>
-              The Indrio Fields Family of Brands
+              Find Your Fit
             </p>
-            <h1 className="mb-6">Farmer-Owned.<br />Grown in the USA.<br />Rooted in Flavor and Nutrition.</h1>
+            <h1 className="mb-6">Different Products.<br />Same Standard.</h1>
             <p className="lead">
-              Different products. Same standards. Every brand pays farmers for flavor and nutrition.
+              Whether you want Florida citrus, Texas grapefruit, or grass-finished beef—every brand
+              ships directly from family farms, grown for flavor and nutrition. Pick what your family will love.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Quality Promise - Simplified */}
+      {/* Quick Picker */}
       <section className="section">
         <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <div className="card-parchment card p-8 text-center">
-              <h2 className="text-2xl mb-4">One Standard Across All Brands</h2>
-              <p className="text-lg mb-6">
-                Every brand follows our S.H.A.R.E. principles—the same commitment to soil health,
-                heritage varieties, minimal inputs, peak ripening, and fair farmer payment.
-              </p>
-              <Link href="/mission" className="btn btn-secondary">
-                See How We Grow Different →
-              </Link>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-center mb-8">What Are You Looking For?</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <a href="#hale-groves" className="card p-6 text-center hover:shadow-lg transition-shadow">
+                <div className="text-3xl mb-3">🍊</div>
+                <h3 className="text-lg font-medium mb-2">Florida Citrus</h3>
+                <p className="text-sm text-stone-600">Gift boxes, navels, grapefruit</p>
+              </a>
+              <a href="#pittman-davis" className="card p-6 text-center hover:shadow-lg transition-shadow">
+                <div className="text-3xl mb-3">⭐</div>
+                <h3 className="text-lg font-medium mb-2">Texas Ruby Reds</h3>
+                <p className="text-sm text-stone-600">Heritage citrus, specialty foods</p>
+              </a>
+              <a href="#sun-harvest" className="card p-6 text-center hover:shadow-lg transition-shadow">
+                <div className="text-3xl mb-3">🥤</div>
+                <h3 className="text-lg font-medium mb-2">Fresh Juice</h3>
+                <p className="text-sm text-stone-600">Same-day squeezed, Fort Myers</p>
+              </a>
+              <a href="#everglades-ranch" className="card p-6 text-center hover:shadow-lg transition-shadow">
+                <div className="text-3xl mb-3">🥩</div>
+                <h3 className="text-lg font-medium mb-2">Grass-Finished Beef</h3>
+                <p className="text-sm text-stone-600">American Wagyu, real omega-3s</p>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Brand Cards */}
+      {/* Brand Details */}
       <section className="section section-cream">
         <div className="container">
           <div className="space-y-16">
             {brands.map((brand, index) => (
               <div
                 key={brand.name}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${
+                id={brand.name.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-start ${
                   index % 2 === 1 ? 'lg:flex-row-reverse' : ''
                 }`}
               >
                 {/* Info Side */}
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                  <div className="flex items-center gap-3 mb-4">
-                    <h2 className="text-3xl mb-0">{brand.name}</h2>
-                  </div>
+                  <h2 className="text-3xl mb-2">{brand.name}</h2>
                   <p className="text-xl mb-4" style={{ color: 'var(--color-accent)' }}>
                     {brand.tagline}
                   </p>
-                  <p className="text-sm italic mb-4 text-stone-600">
+
+                  <p className="text-sm font-medium mb-6 px-4 py-2 rounded-lg" style={{ backgroundColor: 'var(--color-cream)' }}>
+                    {brand.forYou}
+                  </p>
+
+                  {/* What You Get */}
+                  <div className="mb-6">
+                    <h4 className="text-sm font-medium uppercase tracking-wide mb-3">What You Get</h4>
+                    <ul className="space-y-2">
+                      {brand.whatYouGet.map((item) => (
+                        <li key={item} className="flex items-start gap-2">
+                          <span style={{ color: 'var(--color-forest)' }}>✓</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Origin - Collapsed */}
+                  <p className="text-sm text-stone-600 mb-6 italic">
                     {brand.origin}
                   </p>
-                  <p className="mb-6">{brand.description}</p>
-
-                  {/* Metrics */}
-                  <div className="grid grid-cols-3 gap-4 mb-6">
-                    {brand.metrics.map((metric) => (
-                      <div key={metric.label} className="text-center">
-                        <div
-                          className="text-2xl font-bold mb-1"
-                          style={{ color: 'var(--color-forest)' }}
-                        >
-                          {metric.value}
-                        </div>
-                        <div className="text-sm font-medium">{metric.label}</div>
-                        <div className="text-xs text-stone-500">{metric.note}</div>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Products */}
-                  <div className="mb-6">
-                    <h4 className="text-sm font-medium uppercase tracking-wide mb-2">Products</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {brand.products.map((product) => (
-                        <span
-                          key={product}
-                          className="text-sm px-3 py-1 rounded-full bg-white border border-stone-200"
-                        >
-                          {product}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
 
                   <a
                     href={brand.href}
@@ -161,7 +157,7 @@ export default function BrandsPage() {
                     rel="noopener noreferrer"
                     className="btn btn-primary"
                   >
-                    Shop {brand.name} →
+                    {brand.cta} →
                   </a>
                 </div>
 
@@ -179,7 +175,7 @@ export default function BrandsPage() {
                         {brand.name.split(' ')[0]}
                       </div>
                       <div className="text-stone-500 text-sm">
-                        [Brand imagery coming soon]
+                        [Product imagery coming soon]
                       </div>
                     </div>
                   </div>
@@ -190,37 +186,50 @@ export default function BrandsPage() {
         </div>
       </section>
 
-      {/* Why Multiple Brands */}
+      {/* The Standard */}
       <section className="section">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-center mb-8">Why multiple brands?</h2>
-            <div className="space-y-6">
-              <p>
-                Each brand has its own land, its own history, its own expertise.
-                Hale Groves knows Indian River citrus. Pittman & Davis has curated Texas varieties for a century.
-                Sun Harvest brings farm-store freshness. Everglades Ranch is preserving Florida ranchland.
-              </p>
-              <p>
-                Our families have farmed the Southeast for over 200 years. We started Hale Groves because
-                the system didn&apos;t pay us for what we were doing right. Now we&apos;ve built a platform
-                for farmers ready to grow exceptional food—if someone will pay them for it.
-              </p>
-              <p className="text-xl font-medium" style={{ color: 'var(--color-forest)' }}>
-                We pay farmers for flavor and nutrition. We connect them to people who care.
-              </p>
+            <h2 className="text-center mb-8">One Standard Across All Brands</h2>
+            <p className="text-center text-lg mb-8">
+              Different products, but every brand follows the same principles. Here&apos;s what that means for you.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="card p-6 text-center">
+                <div className="text-2xl mb-3" style={{ color: 'var(--color-forest)' }}>📍</div>
+                <h3 className="text-lg font-medium mb-2">Know Where It&apos;s From</h3>
+                <p className="text-sm text-stone-600">
+                  Every product traces back to specific farms and ranches. No anonymous supply chains.
+                </p>
+              </div>
+              <div className="card p-6 text-center">
+                <div className="text-2xl mb-3" style={{ color: 'var(--color-forest)' }}>📊</div>
+                <h3 className="text-lg font-medium mb-2">Numbers, Not Marketing</h3>
+                <p className="text-sm text-stone-600">
+                  Brix levels. Omega ratios. Finishing time. We measure what matters and tell you straight.
+                </p>
+              </div>
+              <div className="card p-6 text-center">
+                <div className="text-2xl mb-3" style={{ color: 'var(--color-forest)' }}>🚚</div>
+                <h3 className="text-lg font-medium mb-2">Fresh to Your Door</h3>
+                <p className="text-sm text-stone-600">
+                  Picked ripe and shipped fast. No weeks in cold storage waiting to be bought.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section section-forest">
+      {/* Not Sure? */}
+      <section className="section section-cream">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="mb-4">Grow Different. Eat Better.<br />Fix the Food System.</h2>
-            <p className="lead mb-8 text-white/90">
-              Pick a brand. Taste the difference.
+            <h2 className="mb-4">Not Sure Where to Start?</h2>
+            <p className="text-lg mb-8">
+              Most families start with citrus—it&apos;s the most obvious difference. Send a gift box to
+              someone you love, or order one for your own table. You&apos;ll understand immediately why
+              brix matters.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -229,17 +238,33 @@ export default function BrandsPage() {
                 rel="noopener noreferrer"
                 className="btn btn-primary"
               >
-                Shop Hale Groves
+                Start With Florida Citrus
               </a>
               <a
                 href="https://pittmandavis.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-outline border-white text-white hover:bg-white/10"
+                className="btn btn-secondary"
               >
-                Shop Pittman & Davis
+                Or Try Texas Ruby Reds
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="section section-forest">
+        <div className="container">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="mb-4">Questions?</h2>
+            <p className="lead mb-8 text-white/90">
+              We&apos;re real people, not a call center. If you want to know more about how we grow,
+              where your food comes from, or which product is right for you—just ask.
+            </p>
+            <Link href="/newsletter" className="btn btn-primary">
+              Get The Field Guide
+            </Link>
           </div>
         </div>
       </section>
