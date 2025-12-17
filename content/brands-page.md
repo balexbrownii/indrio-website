@@ -75,7 +75,7 @@ Fresh-squeezed orange juice and lemonade from our Fort Myers location. Founded 1
 100% grass-fed, grass-finished beef from Florida pastures. No feedlots. No grain finishing. No "grass-fed" loopholes. The way beef was raised before industrial agriculture decided cattle should eat corn.
 
 **Quality Standard**:
-**2.5:1 omega-6 to omega-3 ratio** — Feedlot beef runs 15-20:1. This matters for inflammation, heart health, and how your body processes the fat.
+**6:1 omega-6 to omega-3 ratio** — Feedlot beef runs 15-20:1. This matters for inflammation, heart health, and how your body processes the fat.
 
 **CTA**: [Shop Everglades Ranch →](https://evergladesranch.com) *(update URL as needed)*
 

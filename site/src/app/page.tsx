@@ -170,7 +170,7 @@ export default function Home() {
                     <span>Omega-6 to Omega-3</span>
                     <div className="text-right">
                       <span className="text-stone-400 line-through mr-3">15-20:1</span>
-                      <span className="font-bold" style={{ color: 'var(--color-accent)' }}>2.5:1</span>
+                      <span className="font-bold" style={{ color: 'var(--color-accent)' }}>6:1</span>
                     </div>
                   </div>
                   <div className="flex justify-between items-center">

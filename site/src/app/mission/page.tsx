@@ -136,8 +136,8 @@ export default function MissionPage() {
                     <span>15-20:1</span>
                   </div>
                   <div className="flex justify-between font-medium" style={{ color: 'var(--color-forest)' }}>
-                    <span>Our grass-finished ratio</span>
-                    <span>2.5:1</span>
+                    <span>Our pasture-raised ratio</span>
+                    <span>6:1</span>
                   </div>
                   <p className="text-sm text-stone-500 pt-2">
                     Omega-6 to omega-3 ratio matters for inflammation. Lower is better.
