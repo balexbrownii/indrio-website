@@ -352,9 +352,9 @@ export default function Home() {
               },
               {
                 name: 'Everglades Ranch',
-                category: 'Grass-Fed Beef',
+                category: 'Pasture-Raised Beef',
                 metric: '6:1 omega ratio',
-                description: '100% grass-finished. 24 months on pasture. No feedlot, no loopholes.',
+                description: '100% pasture-raised. 24 months on grass. No feedlot, no loopholes.',
                 href: 'https://evergladesranch.com',
               },
             ].map((brand) => (

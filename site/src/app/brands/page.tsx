@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'The Proof | Indrio Fields',
-  description: 'Brands that meet S.H.A.R.E. standards. Florida citrus, Texas grapefruit, grass-finished beef—evidence that measuring quality produces better food.',
+  description: 'Brands that meet S.H.A.R.E. standards. Florida citrus, Texas grapefruit, pasture-raised beef—evidence that measuring quality produces better food.',
 };
 
 const brands = [
@@ -59,7 +59,7 @@ const brands = [
   },
   {
     name: 'Everglades Ranch',
-    category: 'Grass-Finished Beef',
+    category: 'Pasture-Raised Beef',
     shareScore: {
       soil: 'Florida pastures, Greater Everglades region',
       heritage: 'American Wagyu genetics for marbling',
@@ -243,7 +243,7 @@ export default function BrandsPage() {
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
               >
-                Try Grass-Finished Beef
+                Try Pasture-Raised Beef
               </a>
             </div>
           </div>

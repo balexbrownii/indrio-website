@@ -169,7 +169,7 @@ export default function FielderPage() {
                   <tr className="border-b border-stone-200">
                     <td className="py-3 px-4 font-medium" style={{ color: 'var(--color-forest)' }}>3-6:1</td>
                     <td className="py-3 px-4" style={{ color: 'var(--color-forest)' }}>Premium</td>
-                    <td className="py-3 px-4">Good grass-finished (Everglades Ranch: 6:1)</td>
+                    <td className="py-3 px-4">Good pasture-raised (Everglades Ranch: 6:1)</td>
                   </tr>
                   <tr className="border-b border-stone-200">
                     <td className="py-3 px-4 font-medium">6-12:1</td>

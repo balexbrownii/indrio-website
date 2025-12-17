@@ -122,7 +122,7 @@ export default function LearnPage() {
                       <span className="font-medium text-amber-600">8-12:1</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span>Good grass-finished</span>
+                      <span>Good pasture-raised</span>
                       <span className="font-medium text-green-600">4-6:1</span>
                     </div>
                     <div className="flex items-center justify-between" style={{ color: 'var(--color-forest)' }}>
@@ -132,7 +132,7 @@ export default function LearnPage() {
                   </div>
                 </div>
                 <p className="text-sm text-stone-500 mt-4">
-                  Everglades Ranch beef tests at 6:1—within the &ldquo;good grass-finished&rdquo; range.
+                  Everglades Ranch beef tests at 6:1—within the &ldquo;good pasture-raised&rdquo; range.
                   That&apos;s 3x better than feedlot beef and meaningfully different for your health.
                 </p>
               </div>
