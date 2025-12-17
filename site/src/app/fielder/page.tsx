@@ -226,17 +226,17 @@ export default function FielderPage() {
       <section className="section section-forest">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="mb-6">Experience the Difference</h2>
+            <h2 className="mb-6">Understand the Framework</h2>
             <p className="text-lg text-white/90 mb-8">
-              Data tells the story. But your taste buds will confirm it.
-              Try products from farms that meet S.H.A.R.E. standards.
+              Data tells the story. Learn how we measure quality and why
+              these metrics matter for your health.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/brands" className="btn btn-primary">
-                See Our Brands
+              <Link href="/learn/share-framework" className="btn btn-primary">
+                Learn S.H.A.R.E.
               </Link>
               <Link href="/learn" className="btn btn-outline border-white text-white hover:bg-white/10">
-                Learn More
+                Food Quality 101
               </Link>
             </div>
           </div>

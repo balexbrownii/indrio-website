@@ -205,11 +205,11 @@ export default function AboutPage() {
               We&apos;ve been doing this for 25 years. The only question is what you want to try first.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/brands" className="btn btn-primary">
-                See Your Options
+              <Link href="/learn" className="btn btn-primary">
+                Learn About Food Quality
               </Link>
-              <Link href="/mission" className="btn btn-outline border-white text-white hover:bg-white/10">
-                Read Why It Matters
+              <Link href="/fielder" className="btn btn-outline border-white text-white hover:bg-white/10">
+                See the Data
               </Link>
             </div>
           </div>

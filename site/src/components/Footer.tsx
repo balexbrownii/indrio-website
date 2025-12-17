@@ -43,14 +43,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Brands */}
+          {/* Resources */}
           <div>
-            <h4>Our Brands</h4>
+            <h4>Resources</h4>
             <ul className="space-y-2">
-              <li><a href="https://halegroves.com" target="_blank" rel="noopener noreferrer">Hale Groves</a></li>
-              <li><a href="https://pittmandavis.com" target="_blank" rel="noopener noreferrer">Pittman & Davis</a></li>
-              <li><a href="https://sunharvestcitrus.com" target="_blank" rel="noopener noreferrer">Sun Harvest Citrus</a></li>
-              <li><a href="https://evergladesranch.com" target="_blank" rel="noopener noreferrer">Everglades Ranch</a></li>
+              <li><Link href="/learn/share-framework">S.H.A.R.E. Framework</Link></li>
+              <li><Link href="/fielder/methodology">Methodology</Link></li>
+              <li><Link href="/newsletter">Newsletter</Link></li>
             </ul>
           </div>
         </div>

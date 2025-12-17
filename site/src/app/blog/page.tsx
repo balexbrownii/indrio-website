@@ -208,11 +208,11 @@ export default function BlogPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="mb-8">Explore</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/mission" className="btn btn-secondary">
-                Our Mission
+              <Link href="/about" className="btn btn-secondary">
+                About Us
               </Link>
-              <Link href="/brands" className="btn btn-outline">
-                Our Brands
+              <Link href="/fielder" className="btn btn-outline">
+                Explore Fielder
               </Link>
             </div>
           </div>

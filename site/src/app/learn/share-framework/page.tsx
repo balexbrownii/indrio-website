@@ -288,8 +288,8 @@ export default function ShareFrameworkPage() {
               <Link href="/fielder" className="btn btn-primary">
                 Explore Fielder
               </Link>
-              <Link href="/brands" className="btn btn-outline border-white text-white hover:bg-white/10">
-                See Our Brands
+              <Link href="/learn" className="btn btn-outline border-white text-white hover:bg-white/10">
+                Food Quality 101
               </Link>
             </div>
           </div>

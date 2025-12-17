@@ -175,13 +175,13 @@ export default function Home() {
                 >
                   ✓
                 </div>
-                <h3 className="text-xl mb-3">Taste</h3>
+                <h3 className="text-xl mb-3">Trust</h3>
                 <p className="text-stone-600 mb-4">
-                  Experience the difference yourself. Our family of brands applies these principles—
-                  they&apos;re proof the framework works.
+                  Look for &ldquo;Fielder Verified&rdquo; on products. It means the quality claims
+                  have been measured, not just marketed.
                 </p>
-                <Link href="/brands" className="text-sm font-medium" style={{ color: 'var(--color-forest)' }}>
-                  See the Proof →
+                <Link href="/fielder/methodology" className="text-sm font-medium" style={{ color: 'var(--color-forest)' }}>
+                  See How We Verify →
                 </Link>
               </div>
             </div>
@@ -313,70 +313,6 @@ export default function Home() {
                 See Our Methodology
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* The Proof - Brands as Evidence */}
-      <section className="section">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="mb-4">The Proof: Brands That Meet the Standard</h2>
-            <p className="lead text-stone-600">
-              These aren&apos;t just products we sell. They&apos;re evidence the S.H.A.R.E. framework works.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                name: 'Hale Groves',
-                category: 'Florida Citrus',
-                metric: '11°+ Brix minimum',
-                description: 'Indian River citrus since 1947. Tree-ripened, never picked green.',
-                href: 'https://halegroves.com',
-              },
-              {
-                name: 'Pittman & Davis',
-                category: 'Texas Citrus',
-                metric: 'Heritage varieties',
-                description: 'Texas Ruby Reds since the 1920s. Hand-selected, not machine-sorted.',
-                href: 'https://pittmandavis.com',
-              },
-              {
-                name: 'Sun Harvest',
-                category: 'Fresh Juice',
-                metric: 'Same-day squeezed',
-                description: 'Never pasteurized, never from concentrate. Real juice, not reconstituted.',
-                href: 'https://sunharvestcitrus.com',
-              },
-              {
-                name: 'Everglades Ranch',
-                category: 'Pasture-Raised Beef',
-                metric: '6:1 omega ratio',
-                description: '100% pasture-raised. 24 months on grass. No feedlot, no loopholes.',
-                href: 'https://evergladesranch.com',
-              },
-            ].map((brand) => (
-              <a
-                key={brand.name}
-                href={brand.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="brand-card block"
-              >
-                <div className="text-xs uppercase tracking-wider text-stone-500 mb-1">{brand.category}</div>
-                <h3 className="text-xl mb-2">{brand.name}</h3>
-                <p className="text-sm text-stone-600 mb-3">{brand.description}</p>
-                <span className="quality-badge">{brand.metric}</span>
-              </a>
-            ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <Link href="/brands" className="btn btn-secondary">
-              Learn About Our Brands
-            </Link>
           </div>
         </div>
       </section>

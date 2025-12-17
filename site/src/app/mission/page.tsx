@@ -215,8 +215,8 @@ export default function MissionPage() {
               Start with a box of citrus or try the beef. Your family will notice.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/brands" className="btn btn-primary">
-                See Your Options
+              <Link href="/learn" className="btn btn-primary">
+                Learn What Matters
               </Link>
               <Link href="/newsletter" className="btn btn-secondary">
                 Get The Field Guide
