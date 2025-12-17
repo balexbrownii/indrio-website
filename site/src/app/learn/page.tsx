@@ -70,9 +70,9 @@ export default function LearnPage() {
               <div>
                 <h3 className="text-2xl mb-4" style={{ color: 'var(--color-forest)' }}>What is Brix?</h3>
                 <p className="text-lg mb-4">
-                  Brix (°Bx) measures dissolved sugar content in fruit. Higher brix means sweeter,
-                  more flavorful produce. But it&apos;s also a proxy for overall quality—fruit with
-                  higher brix typically has more vitamins, minerals, and antioxidants.
+                  Brix (°Bx) measures dissolved solids in fruit—carbohydrates, minerals, and vitamins.
+                  Higher brix means more nutritious produce. While the primary carbohydrate is fructose,
+                  brix isn&apos;t just about sweetness—it&apos;s a measure of overall nutritional density.
                 </p>
                 <div className="card p-6">
                   <h4 className="font-medium mb-4">Citrus Brix Ranges</h4>
@@ -97,7 +97,7 @@ export default function LearnPage() {
                 </div>
                 <p className="text-sm text-stone-500 mt-4">
                   Why doesn&apos;t the grocery store sell high-brix fruit? Because they pay farmers
-                  for appearance and yield, not sugar content. And high-brix fruit is often smaller—more flavor
+                  for appearance and yield, not nutritional quality. And high-brix fruit is often smaller—more nutrition
                   per ounce, but fewer ounces per box.
                 </p>
               </div>

@@ -87,10 +87,10 @@ export default function MethodologyPage() {
 
                 <div className="space-y-4">
                   <div className="card p-4">
-                    <h4 className="font-medium mb-2">Brix (Sugar Content)</h4>
+                    <h4 className="font-medium mb-2">Brix (Dissolved Solids)</h4>
                     <p className="text-sm text-stone-600 mb-2">
                       Measured with a refractometer at harvest. Brix is expressed in degrees (°Bx)
-                      and represents the percentage of dissolved solids (primarily sugars) in the juice.
+                      and represents the percentage of dissolved solids—carbohydrates, minerals, and vitamins—in the juice.
                     </p>
                     <p className="text-sm text-stone-500 mb-0">
                       <strong>Method:</strong> Random sample of fruit from each harvest lot. Juice extracted,

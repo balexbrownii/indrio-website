@@ -122,7 +122,7 @@ export default function MissionPage() {
                     <span>11°+</span>
                   </div>
                   <p className="text-sm text-stone-500 pt-2">
-                    Brix measures sugar content. Higher brix = sweeter, more flavorful fruit.
+                    Brix measures dissolved solids—carbohydrates, minerals, vitamins. Higher = more nutritious fruit.
                     It&apos;s the difference between &ldquo;this tastes like water&rdquo; and &ldquo;where did you get this?&rdquo;
                   </p>
                 </div>

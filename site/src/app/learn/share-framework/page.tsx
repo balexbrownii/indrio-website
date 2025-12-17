@@ -170,13 +170,13 @@ export default function ShareFrameworkPage() {
               <p className="mb-4">
                 Industrial supply chains demand early harvest so produce survives weeks of
                 transport and storage. But for citrus, this means sacrificing 20-40% of
-                potential sugar content. The fruit looks fine. It just doesn&apos;t taste like anything.
+                potential nutritional value. The fruit looks fine. It just doesn&apos;t taste like anything.
               </p>
               <div className="card p-4">
                 <h4 className="font-medium mb-2">What We Look For</h4>
                 <ul className="space-y-2 text-stone-600">
                   <li>• Tree-ripened citrus (not picked to survive shipping)</li>
-                  <li>• Brix testing at harvest to verify sweetness</li>
+                  <li>• Brix testing at harvest to verify nutritional density</li>
                   <li>• Time from harvest to customer (shorter = better)</li>
                   <li>• Cold chain management (temperature affects quality degradation)</li>
                 </ul>
@@ -207,7 +207,7 @@ export default function ShareFrameworkPage() {
               <div className="card p-4">
                 <h4 className="font-medium mb-2">What We Measure</h4>
                 <ul className="space-y-2 text-stone-600">
-                  <li>• Brix levels for fruit (sugar content as quality proxy)</li>
+                  <li>• Brix levels for fruit (dissolved solids = nutritional density)</li>
                   <li>• Fatty acid profiles for meat (omega ratios)</li>
                   <li>• Mineral density where testing is available</li>
                   <li>• Farmer compensation (are they paid for quality?)</li>

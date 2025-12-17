@@ -91,7 +91,7 @@ export default function Home() {
                 </h3>
                 <p className="mb-0 text-stone-600">
                   Grocery chains pay for appearance and yield, not nutrition. USDA grades citrus by color, not
-                  sugar content. The system rewards size, uniformity, and shelf life—metrics that
+                  brix. The system rewards size, uniformity, and shelf life—metrics that
                   benefit distributors. Flavor and nutrition? Nobody pays farmers for those.
                 </p>
               </div>
@@ -229,7 +229,7 @@ export default function Home() {
               <div className="card p-6">
                 <h3 className="text-xl mb-4" style={{ color: 'var(--color-forest)' }}>Citrus Quality (Brix)</h3>
                 <p className="text-sm text-stone-500 mb-4">
-                  Brix measures sugar content. Higher = sweeter, more flavorful.
+                  Brix measures dissolved solids—carbohydrates, minerals, vitamins. Higher = more nutritious.
                 </p>
                 <div className="space-y-3">
                   <div>
