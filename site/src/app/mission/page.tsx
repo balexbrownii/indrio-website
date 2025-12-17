@@ -132,8 +132,8 @@ export default function MissionPage() {
                 <h3 className="text-lg font-medium mb-4">Beef</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between">
-                    <span className="text-stone-600">Grain-fed omega ratio</span>
-                    <span>7:1</span>
+                    <span className="text-stone-600">Feedlot omega ratio</span>
+                    <span>15-20:1</span>
                   </div>
                   <div className="flex justify-between font-medium" style={{ color: 'var(--color-forest)' }}>
                     <span>Our grass-finished ratio</span>

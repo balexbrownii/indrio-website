@@ -84,7 +84,7 @@ We work directly with farmers, ranchers, and growers. No commodity markets. No a
 We don't just say our food is better. We measure it.
 
 - **Citrus**: Brix (sugar content) tested at harvest. Our minimum: 11°. Grocery commodity: 8-10°.
-- **Beef**: Omega-6 to Omega-3 ratio tracked. Our standard: 3:1 or better. Feedlot average: 20:1.
+- **Beef**: Omega-6 to Omega-3 ratio tracked. Our standard: 2.5:1. Feedlot average: 15-20:1.
 
 If it doesn't meet the standard, it doesn't ship.
 

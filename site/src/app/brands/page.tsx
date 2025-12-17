@@ -50,7 +50,7 @@ const brands = [
     tagline: 'American Wagyu with omega-3s you can actually measure.',
     forYou: 'Perfect for: Health-conscious families, people who\'ve been disappointed by "grass-fed" labels, serious home cooks.',
     whatYouGet: [
-      '2.5:1 omega ratio (vs 7:1 grain-fed)',
+      '2.5:1 omega ratio (vs 15-20:1 feedlot)',
       '1313% more EPA omega-3s than USDA average',
       '24 months on pasture—twice the industry standard',
     ],
