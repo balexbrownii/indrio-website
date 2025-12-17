@@ -115,7 +115,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl mb-3">Taste the Difference</h3>
                 <p>
-                  11-14° brix citrus instead of grocery&apos;s 6-8°. Beef with real omega-3s. Food that reminds you what food should be.
+                  11°+ brix citrus instead of grocery&apos;s 8-10°. Beef with real omega-3s. Food that reminds you what food should be.
                 </p>
               </div>
             </div>
@@ -143,8 +143,8 @@ export default function Home() {
                   <div className="flex justify-between items-center">
                     <span>Sugar content (Brix)</span>
                     <div className="text-right">
-                      <span className="text-stone-400 line-through mr-3">6-8°</span>
-                      <span className="font-bold" style={{ color: 'var(--color-accent)' }}>11-14°</span>
+                      <span className="text-stone-400 line-through mr-3">8-10°</span>
+                      <span className="font-bold" style={{ color: 'var(--color-accent)' }}>11°+ min</span>
                     </div>
                   </div>
                   <div className="flex justify-between items-center">
@@ -204,7 +204,7 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-3 gap-8 mb-8">
               <div>
-                <div className="text-4xl font-bold mb-2" style={{ color: 'var(--color-forest)' }}>75+</div>
+                <div className="text-4xl font-bold mb-2" style={{ color: 'var(--color-forest)' }}>150+</div>
                 <div className="text-sm">Years of family farming</div>
               </div>
               <div>

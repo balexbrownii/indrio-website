@@ -27,7 +27,7 @@ Every brand, one promise: quality you can measure. Not marketing claims—actual
 Indian River citrus from Florida's legendary growing region. Family-owned since 1947, acquired by Indrio in 2006. We ship tree-ripened fruit directly to your door—never picked green, never sitting in cold storage.
 
 **Quality Standard**:
-**11° Brix minimum** — That's sugar content. Grocery store oranges average 6-8°. Ours start where theirs peak.
+**11° Brix minimum** — That's sugar content. Grocery store oranges average 8-10° (commodity tier). Ours start above their best.
 
 **CTA**: [Shop Hale Groves →](https://halegroves.com)
 

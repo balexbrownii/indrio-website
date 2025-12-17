@@ -11,7 +11,7 @@ const brands = [
     tagline: 'Florida citrus that makes people ask where you got it.',
     forYou: 'Perfect for: Gift-givers, citrus lovers, families who remember what oranges used to taste like.',
     whatYouGet: [
-      '11-14° brix citrus (vs 6-8° grocery)',
+      '11°+ brix minimum (vs 8-10° grocery)',
       'Shipped within days of harvest',
       'Indian River region—the best citrus soil in America',
     ],

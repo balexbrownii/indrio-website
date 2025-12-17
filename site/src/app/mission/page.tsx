@@ -115,11 +115,11 @@ export default function MissionPage() {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-stone-600">Grocery store brix</span>
-                    <span>6-8°</span>
+                    <span>8-10°</span>
                   </div>
                   <div className="flex justify-between font-medium" style={{ color: 'var(--color-forest)' }}>
                     <span>Our minimum brix</span>
-                    <span>11-14°</span>
+                    <span>11°+</span>
                   </div>
                   <p className="text-sm text-stone-500 pt-2">
                     Brix measures sugar content. Higher brix = sweeter, more flavorful fruit.
@@ -156,7 +156,7 @@ export default function MissionPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="mb-6">Who&apos;s Behind This</h2>
             <p className="text-lg text-white/90 mb-6">
-              The Brown and Scott families have farmed Florida&apos;s Indian River region for over 200 years.
+              The Brown and Scott families have farmed Florida&apos;s Indian River region since the 1870s.
               Twenty-five years ago, we got tired of watching our best fruit rot while stores sold inferior
               product at premium prices. So we built a way to ship directly to people who care.
             </p>

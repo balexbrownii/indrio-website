@@ -32,7 +32,7 @@ export default function AboutPage() {
             <div className="space-y-6 text-lg">
               <p>
                 <strong>We&apos;re farmers.</strong> The Brown and Scott families have farmed Florida&apos;s
-                Indian River region for over 200 years. Citrus groves. Cattle ranches. We know this land.
+                Indian River region since the 1870s. Citrus groves. Cattle ranches. We know this land.
               </p>
               <p>
                 <strong>We got frustrated.</strong> Twenty-five years ago, we watched our best fruit rot
@@ -66,7 +66,7 @@ export default function AboutPage() {
               <div className="card">
                 <h3 className="text-xl mb-3">We Have the Solution</h3>
                 <p className="mb-0">
-                  200+ years of farming experience. Four generations of citrus growers. 85 years
+                  Over 150 years of farming experience. Four generations of citrus growers. 85+ years
                   of cattle ranching. And 25 years of direct-to-consumer shipping. We&apos;ve already
                   built the infrastructure to get real food to your door.
                 </p>
