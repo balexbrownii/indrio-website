@@ -123,7 +123,7 @@ export default function AboutPage() {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 {/* Photo placeholder */}
                 <div
-                  className="w-48 h-48 rounded-lg flex-shrink-0 flex items-center justify-center mx-auto md:mx-0"
+                  className="w-48 h-48 rounded flex-shrink-0 flex items-center justify-center mx-auto md:mx-0"
                   style={{ backgroundColor: 'var(--color-cream-dark)' }}
                 >
                   <span className="text-stone-400 text-sm">[Photo]</span>

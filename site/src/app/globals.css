@@ -2,41 +2,83 @@
 
 /* ============================================================================
    INDRIO DESIGN SYSTEM
-   Adapted from Fielder: Documentary Heritage meets Swiss Modernism
+   Refined Heritage: Swiss Modernism meets Artisan Warmth
    ============================================================================ */
 
 :root {
-  /* Official Brand Colors from Brand Print */
+  /* ==========================================================================
+     COLOR PALETTE
+     ========================================================================== */
+
+  /* Official Brand Colors */
   --color-grove: #2D4834;        /* Primary - Forest green */
   --color-parchment: #EDE8D3;    /* Background - Warm cream */
   --color-leaf: #809926;         /* Accent - Yellow-green */
   --color-sky: #A6CDC2;          /* Accent - Teal/mint */
-  --color-mandarin: #E78B00;     /* Accent - Orange */
+  --color-mandarin: #E78B00;     /* Accent - Orange (brand) */
 
-  /* Extended palette */
+  /* Surface Colors */
   --color-cream: #FDFBF7;
   --color-cream-dark: #F5F2EC;
   --color-linen: #FAF0E6;
+  --color-canvas: #F5F5DC;
   --color-white: #FFFFFF;
 
-  /* Text hierarchy - Stone palette */
+  /* Text Hierarchy - Stone Palette (warm, not gray) */
+  --color-text-primary: #1C1917;     /* Headlines, emphasis */
+  --color-text-secondary: #44403C;   /* Body text */
+  --color-text-tertiary: #78716C;    /* Captions, metadata */
+  --color-text-muted: #A8A29E;       /* Placeholders, disabled */
+
+  /* Legacy text aliases */
   --color-charcoal: #1C1917;
   --color-stone: #44403C;
   --color-stone-light: #78716C;
   --color-stone-muted: #A8A29E;
 
-  /* Primary accent - Mandarin Orange */
+  /* Primary Accent - Mandarin Orange (Brand) */
   --color-accent: #E78B00;
   --color-accent-dark: #C97800;
   --color-accent-light: #F59E1A;
 
-  /* Secondary accent - Grove Green */
+  /* Muted Accent - Terracotta (Refined Alternative) */
+  --color-accent-muted: #A67C52;
+  --color-accent-muted-dark: #8B6544;
+
+  /* Secondary Accent - Grove Green */
   --color-forest: #2D4834;
   --color-forest-light: #3D5A4C;
-  --color-sage: #809926;
-  --color-sage-light: #9AB03D;
+  --color-sage: #6B7C5E;
+  --color-sage-light: #809926;
 
-  /* Spacing */
+  /* Craft Materials Palette */
+  --color-copper: #B87333;
+  --color-copper-light: #D4956A;
+  --color-copper-dark: #8B5A2B;
+  --color-brass: #C9A227;
+  --color-wood-light: #DEB887;
+  --color-wood-medium: #A0522D;
+  --color-wood-dark: #5D3A1A;
+
+  /* Semantic Colors (Muted) */
+  --color-success: #6B7C5E;
+  --color-warning: #B8860B;
+  --color-error: #9B4D4D;
+  --color-info: #5D7A8C;
+
+  /* ==========================================================================
+     TYPOGRAPHY
+     ========================================================================== */
+
+  --font-display: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  --font-body: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-typewriter: 'American Typewriter', 'Courier New', Courier, monospace;
+  --font-mono: ui-monospace, 'SF Mono', 'Consolas', monospace;
+
+  /* ==========================================================================
+     SPACING
+     ========================================================================== */
+
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -46,23 +88,30 @@
   --space-3xl: 4rem;
   --space-4xl: 6rem;
 
-  /* Typography - uses Next.js font variables */
-  --font-display: var(--font-playfair), Georgia, 'Times New Roman', serif;
-  --font-body: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* ==========================================================================
+     BORDERS & RADIUS
+     Minimal rounding - refined, not playful
+     ========================================================================== */
 
-  /* Shadows - Warm tinted */
-  --shadow-sm: 0 1px 2px 0 rgb(120 113 108 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(120 113 108 / 0.07), 0 2px 4px -2px rgb(120 113 108 / 0.07);
-  --shadow-lg: 0 10px 15px -3px rgb(120 113 108 / 0.08), 0 4px 6px -4px rgb(120 113 108 / 0.08);
+  --radius-sm: 0.125rem;   /* 2px - subtle */
+  --radius-md: 0.25rem;    /* 4px - default for buttons, inputs */
+  --radius-lg: 0.25rem;    /* Same as md - we don't go larger */
+  --radius-full: 9999px;   /* Only for pills/tags */
 
-  /* Border radius */
-  --radius-sm: 0.125rem;
-  --radius-md: 0.25rem;
-  --radius-lg: 0.375rem;
-  --radius-xl: 0.5rem;
+  /* ==========================================================================
+     SHADOWS
+     Almost never used - rely on spacing and color instead
+     ========================================================================== */
 
-  /* Transitions */
-  --transition-fast: 150ms ease;
+  --shadow-subtle: 0 1px 2px 0 rgb(120 113 108 / 0.04);
+  --shadow-sm: 0 1px 3px rgb(120 113 108 / 0.06), 0 1px 2px rgb(120 113 108 / 0.04);
+
+  /* ==========================================================================
+     TRANSITIONS
+     Subtle, quick, ease-out
+     ========================================================================== */
+
+  --transition-fast: 150ms ease-out;
   --transition-base: 200ms ease-out;
   --transition-slow: 300ms ease-out;
 }
@@ -84,7 +133,7 @@ html {
 
 body {
   background: var(--color-cream);
-  color: var(--color-charcoal);
+  color: var(--color-text-primary);
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.6;
@@ -92,12 +141,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Typography */
+/* ============================================================================
+   TYPOGRAPHY
+   Headlines: Serif, normal weight, tight tracking
+   Body: Sans-serif, generous line-height
+   ============================================================================ */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: 400;
   line-height: 1.2;
-  color: var(--color-charcoal);
+  color: var(--color-text-primary);
   letter-spacing: -0.02em;
 }
 
@@ -113,17 +167,27 @@ h4 { font-size: 1.25rem; }
 }
 
 p {
-  color: var(--color-stone);
+  color: var(--color-text-secondary);
   line-height: 1.7;
 }
 
 .lead {
   font-size: 1.25rem;
-  color: var(--color-stone);
+  color: var(--color-text-secondary);
   line-height: 1.6;
 }
 
-/* Links */
+/* Typewriter text - for note cards, recipes, quotes */
+.typewriter {
+  font-family: var(--font-typewriter);
+  letter-spacing: -0.02em;
+  line-height: 1.7;
+}
+
+/* ============================================================================
+   LINKS
+   ============================================================================ */
+
 a {
   color: var(--color-forest);
   text-decoration: none;
@@ -131,16 +195,33 @@ a {
 }
 
 a:hover {
-  color: var(--color-accent);
+  color: var(--color-text-primary);
 }
 
-/* Focus styles */
+/* Underline link style */
+.link-underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--color-stone-muted);
+}
+
+.link-underline:hover {
+  text-decoration-color: var(--color-text-secondary);
+}
+
+/* ============================================================================
+   FOCUS STYLES
+   ============================================================================ */
+
 *:focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-forest);
   outline-offset: 2px;
 }
 
-/* Selection */
+/* ============================================================================
+   SELECTION
+   ============================================================================ */
+
 ::selection {
   background: var(--color-accent);
   color: white;
@@ -148,6 +229,7 @@ a:hover {
 
 /* ============================================================================
    BUTTONS
+   Understated but clear. No transforms or bounces.
    ============================================================================ */
 
 .btn {
@@ -158,22 +240,21 @@ a:hover {
   font-family: var(--font-body);
   font-size: 0.9375rem;
   font-weight: 500;
+  letter-spacing: 0.01em;
   border-radius: var(--radius-md);
-  transition: all var(--transition-base);
+  transition: background-color var(--transition-base), border-color var(--transition-base);
   cursor: pointer;
   border: none;
 }
 
 .btn-primary {
-  background-color: var(--color-accent);
-  color: white;
+  background-color: var(--color-text-primary);
+  color: var(--color-cream);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-accent-dark);
-  color: white;
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+  background-color: var(--color-text-secondary);
+  color: var(--color-cream);
 }
 
 .btn-secondary {
@@ -184,19 +265,42 @@ a:hover {
 .btn-secondary:hover {
   background-color: var(--color-forest-light);
   color: white;
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.btn-accent:hover {
+  background-color: var(--color-accent-dark);
+  color: white;
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--color-forest);
-  border: 2px solid var(--color-forest);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-stone-muted);
 }
 
 .btn-outline:hover {
-  background-color: var(--color-forest);
-  color: white;
+  border-color: var(--color-text-secondary);
+  color: var(--color-text-primary);
+}
+
+/* Text link button */
+.btn-text {
+  background: transparent;
+  color: var(--color-text-secondary);
+  padding: 0.5rem 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--color-stone-muted);
+}
+
+.btn-text:hover {
+  color: var(--color-text-primary);
+  text-decoration-color: var(--color-text-secondary);
 }
 
 /* ============================================================================
@@ -205,6 +309,12 @@ a:hover {
 
 .container {
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-narrow {
+  max-width: 768px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -219,6 +329,10 @@ a:hover {
 
 .section-parchment {
   background-color: var(--color-parchment);
+}
+
+.section-linen {
+  background-color: var(--color-linen);
 }
 
 .section-forest {
@@ -252,7 +366,7 @@ a:hover {
 }
 
 /* ============================================================================
-   BLOCKQUOTE (Mission Statement)
+   BLOCKQUOTE
    ============================================================================ */
 
 blockquote {
@@ -260,7 +374,7 @@ blockquote {
   font-size: 1.5rem;
   line-height: 1.5;
   color: var(--color-forest);
-  border-left: 4px solid var(--color-accent);
+  border-left: 3px solid var(--color-stone-muted);
   padding-left: var(--space-lg);
   margin: var(--space-2xl) 0;
   font-style: italic;
@@ -271,30 +385,183 @@ blockquote cite {
   font-family: var(--font-body);
   font-size: 0.875rem;
   font-style: normal;
-  color: var(--color-stone-light);
+  color: var(--color-text-tertiary);
   margin-top: var(--space-md);
 }
 
 /* ============================================================================
    CARDS
+   Clean, minimal. No bouncy hovers.
    ============================================================================ */
 
 .card {
   background: var(--color-white);
-  border: 1px solid rgba(120, 113, 108, 0.15);
-  border-radius: var(--radius-lg);
+  border: 1px solid rgba(120, 113, 108, 0.12);
+  border-radius: var(--radius-md);
   padding: var(--space-xl);
-  transition: all var(--transition-base);
+  transition: border-color var(--transition-base);
 }
 
 .card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  border-color: rgba(120, 113, 108, 0.25);
 }
 
 .card-parchment {
   background: var(--color-parchment);
+  border: 1px solid rgba(120, 113, 108, 0.15);
+}
+
+.card-linen {
+  background: var(--color-linen);
+  border: 1px solid rgba(120, 113, 108, 0.12);
+}
+
+/* ============================================================================
+   NOTE CARDS
+   Vintage index card aesthetic - typewriter text, ruled lines
+   ============================================================================ */
+
+.note-card {
+  background: var(--color-parchment);
+  padding: var(--space-lg) var(--space-xl);
+  border-radius: var(--radius-sm);
   border: 1px solid rgba(120, 113, 108, 0.2);
+  position: relative;
+  max-width: 28rem;
+}
+
+/* Ruled lines background */
+.note-card-ruled {
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 27px,
+    rgba(120, 113, 108, 0.08) 28px
+  );
+  background-position: 0 16px;
+}
+
+.note-card-content {
+  position: relative;
+  font-family: var(--font-typewriter);
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+}
+
+.note-card-attribution {
+  font-family: var(--font-typewriter);
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  margin-top: var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Recipe card variant */
+.recipe-card {
+  background: var(--color-cream);
+  border: 1px solid rgba(120, 113, 108, 0.2);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  max-width: 24rem;
+}
+
+.recipe-card-header {
+  background: var(--color-parchment);
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid rgba(120, 113, 108, 0.15);
+}
+
+.recipe-card-header h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.recipe-card-header .subtitle {
+  font-family: var(--font-typewriter);
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+}
+
+.recipe-card-body {
+  padding: var(--space-lg);
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 23px,
+    rgba(120, 113, 108, 0.06) 24px
+  );
+}
+
+.recipe-card-body p {
+  font-family: var(--font-typewriter);
+  font-size: 0.875rem;
+  line-height: 1.75;
+}
+
+/* Stacked cards effect */
+.card-stack {
+  position: relative;
+}
+
+.card-stack::before,
+.card-stack::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--color-cream-dark);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(120, 113, 108, 0.1);
+}
+
+.card-stack::before {
+  bottom: -6px;
+  right: -6px;
+  transform: rotate(2deg);
+  z-index: -2;
+}
+
+.card-stack::after {
+  bottom: -3px;
+  right: -3px;
+  transform: rotate(1deg);
+  z-index: -1;
+  background: var(--color-cream);
+}
+
+/* ============================================================================
+   FEATURE ICONS
+   Muted, understated - not colorful circles
+   ============================================================================ */
+
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-cream-dark);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-size: 1.25rem;
+}
+
+.feature-icon-lg {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+}
+
+/* Subtle colored variant */
+.feature-icon-forest {
+  background: rgba(45, 72, 52, 0.1);
+  color: var(--color-forest);
+}
+
+.feature-icon-accent {
+  background: rgba(231, 139, 0, 0.1);
+  color: var(--color-accent);
 }
 
 /* ============================================================================
@@ -313,17 +580,17 @@ blockquote cite {
   font-family: var(--font-body);
   font-size: 0.9375rem;
   font-weight: 500;
-  color: var(--color-stone);
+  color: var(--color-text-secondary);
   padding: 0.5rem 1rem;
   transition: color var(--transition-fast);
 }
 
 .nav-link:hover {
-  color: var(--color-accent);
+  color: var(--color-text-primary);
 }
 
 .nav-link-active {
-  color: var(--color-accent);
+  color: var(--color-text-primary);
 }
 
 /* ============================================================================
@@ -348,28 +615,10 @@ blockquote cite {
   color: white;
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   margin-bottom: var(--space-md);
-}
-
-/* ============================================================================
-   SHARE FRAMEWORK ICONS
-   ============================================================================ */
-
-.share-icon {
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-parchment);
-  border-radius: var(--radius-md);
-  color: var(--color-forest);
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 500;
 }
 
 /* ============================================================================
@@ -381,53 +630,190 @@ blockquote cite {
   padding: 0.875rem 1rem;
   font-family: var(--font-body);
   font-size: 1rem;
+  color: var(--color-text-primary);
   background: var(--color-white);
-  border: 1px solid rgba(120, 113, 108, 0.3);
+  border: 1px solid rgba(120, 113, 108, 0.25);
   border-radius: var(--radius-md);
-  transition: all var(--transition-fast);
+  transition: border-color var(--transition-fast);
 }
 
 .input:focus {
   outline: none;
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(226, 94, 37, 0.1);
+  border-color: var(--color-text-secondary);
 }
 
 .input::placeholder {
-  color: var(--color-stone-muted);
+  color: var(--color-text-muted);
 }
 
 /* ============================================================================
-   BRAND CARDS
+   TABLES
    ============================================================================ */
 
-.brand-card {
-  background: var(--color-white);
-  border: 1px solid rgba(120, 113, 108, 0.15);
-  border-radius: var(--radius-lg);
-  padding: var(--space-xl);
-  text-align: center;
-  transition: all var(--transition-base);
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.brand-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-4px);
+thead tr {
+  border-bottom: 2px solid rgba(120, 113, 108, 0.15);
 }
 
-.brand-card .quality-badge {
-  display: inline-block;
-  background: var(--color-sage-light);
-  color: var(--color-forest);
-  padding: 0.375rem 0.75rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.8125rem;
+th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-tertiary);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(120, 113, 108, 0.08);
+}
+
+tbody tr:hover {
+  background: rgba(120, 113, 108, 0.02);
+}
+
+/* ============================================================================
+   BADGES & TAGS
+   ============================================================================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  margin-top: var(--space-md);
+  border-radius: var(--radius-full);
+  background: var(--color-cream-dark);
+  color: var(--color-text-secondary);
+}
+
+.badge-success {
+  background: rgba(107, 124, 94, 0.15);
+  color: var(--color-success);
+}
+
+.badge-accent {
+  background: rgba(231, 139, 0, 0.15);
+  color: var(--color-accent-dark);
+}
+
+/* ============================================================================
+   TEXTURES
+   Subtle patterns that add warmth - one per element, very low opacity
+   ============================================================================ */
+
+/* Paper grain texture */
+.texture-paper {
+  position: relative;
+}
+
+.texture-paper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* Checkerboard pattern - farmhouse/mercantile */
+.texture-checkerboard {
+  background-image:
+    linear-gradient(45deg, rgba(120, 113, 108, 0.03) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(120, 113, 108, 0.03) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(120, 113, 108, 0.03) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(120, 113, 108, 0.03) 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+}
+
+/* Linen weave texture */
+.texture-linen {
+  background-image:
+    linear-gradient(90deg, rgba(120, 113, 108, 0.02) 1px, transparent 1px),
+    linear-gradient(rgba(120, 113, 108, 0.02) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+/* Horizontal rules - for note/recipe cards */
+.texture-ruled {
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 27px,
+    rgba(120, 113, 108, 0.07) 28px
+  );
+}
+
+/* ============================================================================
+   OVERLINE TEXT
+   Small caps label above headlines
+   ============================================================================ */
+
+.overline {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-tertiary);
+}
+
+.overline-accent {
+  color: var(--color-accent);
+}
+
+/* ============================================================================
+   DATA DISPLAY
+   For quality scores, metrics, comparisons
+   ============================================================================ */
+
+.metric {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: var(--color-text-tertiary);
+  margin-top: 0.25rem;
+}
+
+/* Progress/comparison bars */
+.quality-bar {
+  height: 0.5rem;
+  background: rgba(120, 113, 108, 0.1);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.quality-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--color-forest);
+}
+
+.quality-bar-fill-accent {
+  background: var(--color-accent);
+}
+
+.quality-bar-fill-muted {
+  background: var(--color-stone-muted);
 }
 
 /* ============================================================================
    ANIMATIONS
+   Subtle, purposeful, ease-out. No bouncing.
    ============================================================================ */
 
 @keyframes fade-in {
@@ -435,10 +821,10 @@ blockquote cite {
   to { opacity: 1; }
 }
 
-@keyframes slide-up {
+@keyframes fade-in-up {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -451,29 +837,47 @@ blockquote cite {
 }
 
 .animate-slide-up {
-  animation: slide-up var(--transition-slow) ease-out;
+  animation: fade-in-up var(--transition-slow) ease-out;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* ============================================================================
-   TEXTURE (Optional Paper Effect)
+   SHARE FRAMEWORK ICONS
    ============================================================================ */
 
-.texture-paper {
-  position: relative;
+.share-icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-cream-dark);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
-.texture-paper::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
-  opacity: 0.02;
-  pointer-events: none;
-  mix-blend-mode: overlay;
-}
+/* Colored S.H.A.R.E. icons - muted versions */
+.share-icon-soil { background: rgba(139, 69, 19, 0.1); color: #8B4513; }
+.share-icon-heritage { background: rgba(107, 124, 94, 0.1); color: var(--color-sage); }
+.share-icon-agricultural { background: rgba(93, 122, 140, 0.1); color: var(--color-info); }
+.share-icon-ripen { background: rgba(184, 134, 11, 0.1); color: var(--color-warning); }
+.share-icon-enrich { background: rgba(123, 31, 162, 0.1); color: #7B1FA2; }
 
 /* ============================================================================
-   RESPONSIVE UTILITIES
+   RESPONSIVE
    ============================================================================ */
 
 @media (max-width: 768px) {
@@ -491,3 +895,22 @@ blockquote cite {
     display: none;
   }
 }
+
+/* ============================================================================
+   UTILITY CLASSES
+   ============================================================================ */
+
+/* Max widths for readable text */
+.max-w-prose { max-width: 65ch; }
+.max-w-readable { max-width: 42rem; }
+
+/* Subtle divider */
+.divider {
+  height: 1px;
+  background: rgba(120, 113, 108, 0.1);
+  margin: var(--space-2xl) 0;
+}
+
+/* Copper accent for premium elements */
+.text-copper { color: var(--color-copper); }
+.bg-copper { background-color: var(--color-copper); }

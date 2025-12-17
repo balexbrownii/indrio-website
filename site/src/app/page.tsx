@@ -135,10 +135,7 @@ export default function Home() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"
-                  style={{ backgroundColor: 'var(--color-forest)', color: 'white' }}
-                >
+                <div className="feature-icon feature-icon-lg feature-icon-forest mx-auto mb-4">
                   📚
                 </div>
                 <h3 className="text-xl mb-3">Learn</h3>
@@ -152,10 +149,7 @@ export default function Home() {
               </div>
 
               <div className="text-center">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"
-                  style={{ backgroundColor: 'var(--color-forest)', color: 'white' }}
-                >
+                <div className="feature-icon feature-icon-lg feature-icon-forest mx-auto mb-4">
                   🔬
                 </div>
                 <h3 className="text-xl mb-3">Verify</h3>
@@ -169,10 +163,7 @@ export default function Home() {
               </div>
 
               <div className="text-center">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"
-                  style={{ backgroundColor: 'var(--color-forest)', color: 'white' }}
-                >
+                <div className="feature-icon feature-icon-lg feature-icon-forest mx-auto mb-4">
                   ✓
                 </div>
                 <h3 className="text-xl mb-3">Trust</h3>

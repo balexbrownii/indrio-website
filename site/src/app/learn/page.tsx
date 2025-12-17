@@ -31,7 +31,7 @@ export default function LearnPage() {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
-              <Link href="#quality-101" className="card p-6 hover:shadow-lg transition-shadow">
+              <Link href="#quality-101" className="card p-6">
                 <div className="text-3xl mb-3">📊</div>
                 <h3 className="text-xl mb-2">Food Quality 101</h3>
                 <p className="text-stone-600 text-sm mb-0">
@@ -39,7 +39,7 @@ export default function LearnPage() {
                 </p>
               </Link>
 
-              <Link href="/learn/share-framework" className="card p-6 hover:shadow-lg transition-shadow">
+              <Link href="/learn/share-framework" className="card p-6">
                 <div className="text-3xl mb-3">🌱</div>
                 <h3 className="text-xl mb-2">S.H.A.R.E. Framework</h3>
                 <p className="text-stone-600 text-sm mb-0">
@@ -47,7 +47,7 @@ export default function LearnPage() {
                 </p>
               </Link>
 
-              <Link href="#label-decoder" className="card p-6 hover:shadow-lg transition-shadow">
+              <Link href="#label-decoder" className="card p-6">
                 <div className="text-3xl mb-3">🏷️</div>
                 <h3 className="text-xl mb-2">Label Decoder</h3>
                 <p className="text-stone-600 text-sm mb-0">

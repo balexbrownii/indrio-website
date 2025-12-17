@@ -66,10 +66,7 @@ export default function ShareFrameworkPage() {
             {/* Soil */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold text-white"
-                  style={{ backgroundColor: '#8B4513' }}
-                >
+                <div className="share-icon share-icon-soil w-16 h-16 text-3xl font-bold">
                   S
                 </div>
                 <div>
@@ -100,10 +97,7 @@ export default function ShareFrameworkPage() {
             {/* Heritage */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold text-white"
-                  style={{ backgroundColor: '#2E7D32' }}
-                >
+                <div className="share-icon share-icon-heritage w-16 h-16 text-3xl font-bold">
                   H
                 </div>
                 <div>
@@ -135,10 +129,7 @@ export default function ShareFrameworkPage() {
             {/* Agricultural */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold text-white"
-                  style={{ backgroundColor: '#1565C0' }}
-                >
+                <div className="share-icon share-icon-agricultural w-16 h-16 text-3xl font-bold">
                   A
                 </div>
                 <div>
@@ -170,10 +161,7 @@ export default function ShareFrameworkPage() {
             {/* Ripen */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold text-white"
-                  style={{ backgroundColor: '#F57C00' }}
-                >
+                <div className="share-icon share-icon-ripen w-16 h-16 text-3xl font-bold">
                   R
                 </div>
                 <div>
@@ -204,10 +192,7 @@ export default function ShareFrameworkPage() {
             {/* Enrich */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold text-white"
-                  style={{ backgroundColor: '#7B1FA2' }}
-                >
+                <div className="share-icon share-icon-enrich w-16 h-16 text-3xl font-bold">
                   E
                 </div>
                 <div>

@@ -92,7 +92,7 @@ export default function BlogPage() {
               <article key={post.slug} className="card group">
                 {/* Placeholder image */}
                 <div
-                  className="aspect-[16/9] rounded-lg mb-4 flex items-center justify-center"
+                  className="aspect-[16/9] rounded-sm mb-4 flex items-center justify-center"
                   style={{ backgroundColor: 'var(--color-cream-dark)' }}
                 >
                   <span className="text-stone-400 text-sm">[Image]</span>

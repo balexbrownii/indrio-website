@@ -31,7 +31,7 @@ export default function Header() {
   ];
 
   return (
-    <div className={`sticky top-0 z-50 ${isScrolled ? 'shadow-md' : ''}`}>
+    <div className={`sticky top-0 z-50 ${isScrolled ? 'border-b border-stone-200' : ''}`}>
       {/* Multi-Brand Top Bar */}
       <div className="bg-[#1a2e1a] text-white text-xs">
         <div className="container">
