@@ -323,7 +323,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="mb-6">Join the Movement</h2>
             <p className="text-lg text-white/90 mb-4">
-              Every time you choose food grown for nutrition over food grown for shipping,
+              Every time you choose food grown for quality over food grown for minimums,
               you&apos;re voting for a different kind of farming.
             </p>
             <p className="text-lg text-white/90 mb-8">

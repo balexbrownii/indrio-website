@@ -168,14 +168,14 @@ export default function ShareFrameworkPage() {
                 For non-climacteric produce like citrus, what you pick is what you get—forever.
               </p>
               <p className="mb-4">
-                Industrial supply chains demand early harvest so produce survives weeks of
-                transport and storage. But for citrus, this means sacrificing 20-40% of
-                potential nutritional value. The fruit looks fine. It just doesn&apos;t taste like anything.
+                The system harvests when fruit meets USDA minimums—not when it reaches peak quality.
+                For citrus, this means sacrificing significant nutritional value. The fruit looks
+                fine. It just doesn&apos;t taste like anything.
               </p>
               <div className="card p-4">
                 <h4 className="font-medium mb-2">What We Look For</h4>
                 <ul className="space-y-2 text-stone-600">
-                  <li>• Tree-ripened citrus (not picked to survive shipping)</li>
+                  <li>• Tree-ripened citrus (harvested for quality, not just USDA minimums)</li>
                   <li>• Brix testing at harvest to verify nutritional density</li>
                   <li>• Time from harvest to customer (shorter = better)</li>
                   <li>• Cold chain management (temperature affects quality degradation)</li>

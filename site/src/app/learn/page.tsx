@@ -162,7 +162,7 @@ export default function LearnPage() {
                 </div>
                 <p className="text-sm text-stone-500 mt-4">
                   This is why grocery store citrus tastes like water—it&apos;s picked before it&apos;s ripe
-                  to survive shipping. But unlike a banana, it will never get sweeter.
+                  to meet USDA minimums. But unlike a banana, it will never get sweeter.
                 </p>
               </div>
             </div>

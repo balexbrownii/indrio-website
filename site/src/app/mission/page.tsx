@@ -56,11 +56,11 @@ export default function MissionPage() {
               </div>
 
               <div className="card p-6">
-                <h3 className="text-xl mb-3" style={{ color: 'var(--color-forest)' }}>The Cold Chain Kills Flavor</h3>
+                <h3 className="text-xl mb-3" style={{ color: 'var(--color-forest)' }}>Harvested for Minimums, Not Quality</h3>
                 <p className="mb-0">
-                  Most citrus is picked before it&apos;s ripe so it can survive a 2,000-mile journey and weeks in storage.
+                  Citrus is harvested when it meets USDA minimum standards—not when it reaches peak quality.
                   The problem? Citrus doesn&apos;t ripen after picking. What you get at the store is as good as it will
-                  ever be—and it was picked to survive shipping, not to taste good.
+                  ever be. Nobody in the supply chain gets paid for quality above the minimum.
                 </p>
               </div>
             </div>
