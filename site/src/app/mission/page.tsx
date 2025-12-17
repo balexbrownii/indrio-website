@@ -175,10 +175,11 @@ export default function MissionPage() {
       <section className="section">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-center mb-8">How We Grow Different</h2>
+            <h2 className="text-center mb-8">Our Quality Framework: S.H.A.R.E.</h2>
             <p className="text-center text-lg mb-8">
-              Our approach is based on the work of Dr. William Albrecht—healthy soil grows food that
-              actually nourishes. We call it S.H.A.R.E.
+              We developed S.H.A.R.E. to measure what actually matters in food quality—not just
+              how it looks, but how it nourishes. It&apos;s our proprietary framework for selecting
+              farms and verifying quality.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
               {[

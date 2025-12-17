@@ -93,8 +93,8 @@ We're building Fielder—a quality verification system that measures what actual
 
 When competitors are better, we'll say so. When they're not, we'll show the receipts.
 
-### S.H.A.R.E. Framework
-Our quality principles:
+### S.H.A.R.E. Framework (Proprietary)
+Our proprietary quality framework for selecting farms and verifying food quality:
 
 | Principle | Meaning |
 |-----------|---------|
