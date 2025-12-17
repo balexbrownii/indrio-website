@@ -288,7 +288,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="font-medium">Everglades Ranch (100% grass)</span>
+                      <span className="font-medium">Everglades Ranch (pasture-raised)</span>
                       <span className="font-medium" style={{ color: 'var(--color-forest)' }}>6:1</span>
                     </div>
                     <div className="h-3 bg-stone-200 rounded-full overflow-hidden">

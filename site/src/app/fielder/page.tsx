@@ -199,7 +199,7 @@ export default function FielderPage() {
               <p className="mb-0">
                 <strong>The irony:</strong> The most expensive beef grades (Wagyu, Prime) often have the
                 worst omega ratios because marbling comes from grain finishing. Price doesn&apos;t equal health.
-                Everglades Ranch produces American Wagyu genetics on 100% grass—getting the flavor
+                Everglades Ranch produces American Wagyu genetics on Florida pasture—getting the flavor
                 genetics without the inflammatory fat profile.
               </p>
             </div>
