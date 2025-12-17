@@ -97,7 +97,7 @@ export default function LearnPage() {
                 </div>
                 <p className="text-sm text-stone-500 mt-4">
                   Why doesn&apos;t the grocery store sell high-brix fruit? Because they pay farmers
-                  by weight, not sugar content. And high-brix fruit is often smaller—more flavor
+                  for appearance and yield, not sugar content. And high-brix fruit is often smaller—more flavor
                   per ounce, but fewer ounces per box.
                 </p>
               </div>

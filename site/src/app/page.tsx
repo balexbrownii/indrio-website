@@ -90,7 +90,7 @@ export default function Home() {
                   The Wrong Things Get Measured
                 </h3>
                 <p className="mb-0 text-stone-600">
-                  Grocery chains pay by weight, not nutrition. USDA grades citrus by color, not
+                  Grocery chains pay for appearance and yield, not nutrition. USDA grades citrus by color, not
                   sugar content. The system rewards size, uniformity, and shelf life—metrics that
                   benefit distributors. Flavor and nutrition? Nobody pays farmers for those.
                 </p>

@@ -37,7 +37,7 @@ export default function MissionPage() {
               <div className="card p-6">
                 <h3 className="text-xl mb-3" style={{ color: 'var(--color-forest)' }}>The Economics Work Against You</h3>
                 <p className="mb-0">
-                  Grocery chains pay farmers by weight, not by flavor. They penalize cosmetic imperfections.
+                  Grocery chains pay farmers for appearance and yield, not flavor. They penalize cosmetic imperfections.
                   So farmers grow heavy, uniform, perfect-looking produce—because that&apos;s what pays.
                   The citrus industry has tried to set quality standards (like minimum brix levels), but
                   when the market rewards meeting the minimum rather than exceeding it, that&apos;s what you get.
